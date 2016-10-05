@@ -20,11 +20,11 @@ MAVEN_ID="org.apache.maven:maven-plugin-registry:2.1.0"
 
 # Common dependencies
 # POM: ../poms/maven-plugin-registry-2.1.0.pom
-# org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1 -> >=app-maven/plexus-container-default-1.0:0
+# org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1 -> >=app-maven/plexus-container-default-1.0_alpha9:0
 # org.codehaus.plexus:plexus-utils:1.5.6 -> >=app-maven/plexus-utils-1.5.6:0
 # POM: ../poms/maven-plugin-registry-2.1.0.pom
 CDEPEND="
-	>=app-maven/plexus-container-default-1.0:0
+	>=app-maven/plexus-container-default-1.0_alpha9:0
 	>=app-maven/plexus-utils-1.5.6:0"
 
 DEPEND="${CDEPEND}

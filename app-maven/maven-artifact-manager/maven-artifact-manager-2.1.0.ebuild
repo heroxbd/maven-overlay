@@ -23,17 +23,17 @@ MAVEN_ID="org.apache.maven:maven-artifact-manager:2.1.0"
 # backport-util-concurrent:backport-util-concurrent:3.1 -> >=app-maven/backport-util-concurrent-3.1:0
 # org.apache.maven:maven-artifact:2.1.0 -> >=app-maven/maven-artifact-2.1.0:0
 # org.apache.maven:maven-repository-metadata:2.1.0 -> >=app-maven/maven-repository-metadata-2.1.0:0
-# org.apache.maven.wagon:wagon-provider-api:1.0-beta-5 -> >=app-maven/wagon-provider-api-1.0:0
-# org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1 -> >=app-maven/plexus-container-default-1.0:0
+# org.apache.maven.wagon:wagon-provider-api:1.0-beta-5 -> >=app-maven/wagon-provider-api-1.0_beta5:0
+# org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1 -> >=app-maven/plexus-container-default-1.0_alpha9:0
 # org.codehaus.plexus:plexus-utils:1.5.6 -> >=app-maven/plexus-utils-1.5.6:0
 # POM: ../poms/maven-artifact-manager-2.1.0.pom
 CDEPEND="
 	>=app-maven/backport-util-concurrent-3.1:0
 	>=app-maven/maven-artifact-2.1.0:0
 	>=app-maven/maven-repository-metadata-2.1.0:0
-	>=app-maven/plexus-container-default-1.0:0
+	>=app-maven/plexus-container-default-1.0_alpha9:0
 	>=app-maven/plexus-utils-1.5.6:0
-	>=app-maven/wagon-provider-api-1.0:0"
+	>=app-maven/wagon-provider-api-1.0_beta5:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

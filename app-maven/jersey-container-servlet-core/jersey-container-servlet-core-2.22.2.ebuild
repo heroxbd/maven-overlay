@@ -21,12 +21,12 @@ MAVEN_ID="org.glassfish.jersey.containers:jersey-container-servlet-core:2.22.2"
 # Common dependencies
 # POM: ../poms/jersey-container-servlet-core-2.22.2.pom
 # javax.ws.rs:javax.ws.rs-api:2.0.1 -> >=app-maven/javax-ws-rs-api-2.0.1:0
-# org.glassfish.hk2.external:javax.inject:2.4.0-b34 -> >=app-maven/javax-inject-2.4.0:0
+# org.glassfish.hk2.external:javax.inject:2.4.0-b34 -> >=app-maven/javax-inject-2.4.0_beta34:0
 # org.glassfish.jersey.core:jersey-common:2.22.2 -> >=app-maven/jersey-common-2.22.2:0
 # org.glassfish.jersey.core:jersey-server:2.22.2 -> >=app-maven/jersey-server-2.22.2:0
 # POM: ../poms/jersey-container-servlet-core-2.22.2.pom
 CDEPEND="
-	>=app-maven/javax-inject-2.4.0:0
+	>=app-maven/javax-inject-2.4.0_beta34:0
 	>=app-maven/javax-ws-rs-api-2.0.1:0
 	>=app-maven/jersey-common-2.22.2:0
 	>=app-maven/jersey-server-2.22.2:0"

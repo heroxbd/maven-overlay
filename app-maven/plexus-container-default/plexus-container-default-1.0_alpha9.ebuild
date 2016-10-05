@@ -20,12 +20,12 @@ MAVEN_ID="org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1"
 
 # Common dependencies
 # POM: ../poms/plexus-container-default-1.0-alpha-9-stable-1.pom
-# classworlds:classworlds:1.1-alpha-2 -> >=app-maven/classworlds-bin-1.1:0
+# classworlds:classworlds:1.1-alpha-2 -> >=app-maven/classworlds-bin-1.1_alpha2:0
 # junit:junit:3.8.1 -> >=dev-java/junit-4.12:4
 # org.codehaus.plexus:plexus-utils:1.0.4 -> >=app-maven/plexus-utils-1.5.6:0
 # POM: ../poms/plexus-container-default-1.0-alpha-9-stable-1.pom
 CDEPEND="
-	>=app-maven/classworlds-bin-1.1:0
+	>=app-maven/classworlds-bin-1.1_alpha2:0
 	>=app-maven/plexus-utils-1.5.6:0
 	>=dev-java/junit-4.12:4"
 

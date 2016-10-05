@@ -20,18 +20,18 @@ MAVEN_ID="org.glassfish.hk2:hk2-locator:2.4.0-b34"
 
 # Common dependencies
 # POM: ../poms/hk2-locator-2.4.0-b34.pom
-# org.glassfish.hk2:hk2-api:2.4.0-b34 -> >=app-maven/hk2-api-2.4.0:0
-# org.glassfish.hk2:hk2-utils:2.4.0-b34 -> >=app-maven/hk2-utils-2.4.0:0
-# org.glassfish.hk2.external:aopalliance-repackaged:2.4.0-b34 -> >=app-maven/aopalliance-repackaged-2.4.0:0
-# org.glassfish.hk2.external:javax.inject:2.4.0-b34 -> >=app-maven/javax-inject-2.4.0:0
+# org.glassfish.hk2:hk2-api:2.4.0-b34 -> >=app-maven/hk2-api-2.4.0_beta34:0
+# org.glassfish.hk2:hk2-utils:2.4.0-b34 -> >=app-maven/hk2-utils-2.4.0_beta34:0
+# org.glassfish.hk2.external:aopalliance-repackaged:2.4.0-b34 -> >=app-maven/aopalliance-repackaged-2.4.0_beta34:0
+# org.glassfish.hk2.external:javax.inject:2.4.0-b34 -> >=app-maven/javax-inject-2.4.0_beta34:0
 # org.javassist:javassist:3.18.1-GA -> >=dev-java/javassist-3.18.2:3
 # org.jvnet:tiger-types:1.4 -> >=app-maven/tiger-types-1.4:0
 # POM: ../poms/hk2-locator-2.4.0-b34.pom
 CDEPEND="
-	>=app-maven/aopalliance-repackaged-2.4.0:0
-	>=app-maven/hk2-api-2.4.0:0
-	>=app-maven/hk2-utils-2.4.0:0
-	>=app-maven/javax-inject-2.4.0:0
+	>=app-maven/aopalliance-repackaged-2.4.0_beta34:0
+	>=app-maven/hk2-api-2.4.0_beta34:0
+	>=app-maven/hk2-utils-2.4.0_beta34:0
+	>=app-maven/javax-inject-2.4.0_beta34:0
 	>=app-maven/tiger-types-1.4:0
 	>=dev-java/javassist-3.18.2:3"
 

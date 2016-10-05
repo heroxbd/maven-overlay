@@ -20,10 +20,10 @@ MAVEN_ID="org.glassfish.gmbal:gmbal-api-only:3.0.0-b023"
 
 # Common dependencies
 # POM: ../poms/gmbal-api-only-3.0.0-b023.pom
-# org.glassfish.external:management-api:3.0.0-b012 -> >=app-maven/management-api-bin-3.0.0:0
+# org.glassfish.external:management-api:3.0.0-b012 -> >=app-maven/management-api-bin-3.0.0_beta012:0
 # POM: ../poms/gmbal-api-only-3.0.0-b023.pom
 CDEPEND="
-	>=app-maven/management-api-bin-3.0.0:0"
+	>=app-maven/management-api-bin-3.0.0_beta012:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

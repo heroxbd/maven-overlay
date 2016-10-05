@@ -70,7 +70,7 @@ MAVEN_ID="org.apache.spark:spark-core_2.11:2.0.0"
 # org.slf4j:slf4j-api:1.7.16 -> >=dev-java/slf4j-api-1.7.7:0
 # org.slf4j:slf4j-log4j12:1.7.16 -> >=dev-java/slf4j-api-1.7.7:0
 # org.spark-project.spark:unused:1.0.0 -> >=app-maven/unused-1.0.0:0
-# org.xerial.snappy:snappy-java:1.1.2.4 -> >=dev-java/snappy-1.0.3:1.0
+# org.xerial.snappy:snappy-java:1.1.2.4 -> >=dev-java/snappy-1.0.3_rc3:1.0
 # oro:oro:2.0.8 -> >=app-maven/oro-2.0.8:0
 # POM: ../poms/spark-core_2.11-2.0.0.pom
 CDEPEND="
@@ -118,7 +118,7 @@ CDEPEND="
 	>=dev-java/jackson-databind-2.5.2:2
 	>=dev-java/log4j-1.2.17:0
 	>=dev-java/slf4j-api-1.7.7:0
-	>=dev-java/snappy-1.0.3:1.0"
+	>=dev-java/snappy-1.0.3_rc3:1.0"
 # Compile dependencies
 # POM: ../poms/spark-core_2.11-2.0.0.pom
 # com.google.guava:guava:14.0.1 -> >=dev-java/guava-07:0

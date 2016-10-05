@@ -25,7 +25,6 @@ MAVEN_ID="org.apache.ivy:ivy:2.4.0"
 # Common dependencies
 # POM: ../poms/ivy-2.4.0.pom
 # com.jcraft:jsch:0.1.50 -> >=dev-java/jsch-0.1.52:0
-# com.jcraft:jsch.agentproxy:0.0.6 -> >=app-maven/jsch-agentproxy-bin-0.0.6:0
 # com.jcraft:jsch.agentproxy.connector-factory:0.0.6 -> >=app-maven/jsch-agentproxy-connector-factory-0.0.6:0
 # com.jcraft:jsch.agentproxy.jsch:0.0.6 -> >=app-maven/jsch-agentproxy-jsch-0.0.6:0
 # commons-httpclient:commons-httpclient:3.0 -> >=dev-java/commons-httpclient-3.1:3
@@ -38,7 +37,6 @@ MAVEN_ID="org.apache.ivy:ivy:2.4.0"
 # oro:oro:2.0.8 -> >=app-maven/oro-2.0.8:0
 # POM: ../poms/ivy-2.4.0.pom
 CDEPEND="
-	>=app-maven/jsch-agentproxy-bin-0.0.6:0
 	>=app-maven/jsch-agentproxy-connector-factory-0.0.6:0
 	>=app-maven/jsch-agentproxy-jsch-0.0.6:0
 	>=app-maven/oro-2.0.8:0

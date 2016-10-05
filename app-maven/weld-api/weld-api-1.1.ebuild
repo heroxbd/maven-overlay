@@ -20,11 +20,11 @@ MAVEN_ID="org.jboss.weld:weld-api:1.1.Final"
 
 # Common dependencies
 # POM: ../poms/weld-api-1.1.Final.pom
-# javax.enterprise:cdi-api:1.0-SP3 -> >=app-maven/cdi-api-1.0:0
+# javax.enterprise:cdi-api:1.0-SP3 -> >=app-maven/cdi-api-1.0_p4:0
 # javax.servlet:servlet-api:2.5 -> >=app-maven/servlet-api-2.5:0
 # POM: ../poms/weld-api-1.1.Final.pom
 CDEPEND="
-	>=app-maven/cdi-api-1.0:0
+	>=app-maven/cdi-api-1.0_p4:0
 	>=app-maven/servlet-api-2.5:0"
 
 DEPEND="${CDEPEND}

@@ -21,7 +21,7 @@ MAVEN_ID="org.jboss.weld:weld-spi:1.1.Final"
 # Common dependencies
 # POM: ../poms/weld-spi-1.1.Final.pom
 # javax.annotation:jsr250-api:1.0 -> >=app-maven/jsr250-api-1.0:0
-# javax.enterprise:cdi-api:1.0-SP3 -> >=app-maven/cdi-api-1.0:0
+# javax.enterprise:cdi-api:1.0-SP3 -> >=app-maven/cdi-api-1.0_p4:0
 # javax.faces:jsf-api:1.2_13 -> >=app-maven/jsf-api-2.0:0
 # javax.persistence:persistence-api:1.0 -> >=app-maven/persistence-api-1.0:0
 # javax.servlet:servlet-api:2.5 -> >=app-maven/servlet-api-2.5:0
@@ -32,7 +32,7 @@ MAVEN_ID="org.jboss.weld:weld-spi:1.1.Final"
 # org.jboss.weld:weld-api:1.1.Final -> >=app-maven/weld-api-1.1:0
 # POM: ../poms/weld-spi-1.1.Final.pom
 CDEPEND="
-	>=app-maven/cdi-api-1.0:0
+	>=app-maven/cdi-api-1.0_p4:0
 	>=app-maven/jboss-ejb-api-1.0.0:3.1_spec
 	>=app-maven/jboss-interceptors-api-1.0.0:1.1_spec
 	>=app-maven/jsf-api-2.0:0
