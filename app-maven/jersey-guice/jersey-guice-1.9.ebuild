@@ -24,12 +24,12 @@ MAVEN_ID="com.sun.jersey.contribs:jersey-guice:1.9"
 # com.google.inject:guice:3.0 -> >=dev-java/guice-4.0:4
 # com.google.inject.extensions:guice-servlet:3.0 -> >=dev-java/guice-4.0:4
 # com.sun.jersey:jersey-server:1.9 -> >=app-maven/jersey-server-1.9:0
-# javax.inject:javax.inject:1 -> >=app-maven/javax-inject-1:0
+# javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
 # POM: ../poms/jersey-guice-1.9.pom
 CDEPEND="
-	>=app-maven/javax-inject-1:0
 	>=app-maven/jersey-server-1.9:0
-	>=dev-java/guice-4.0:4"
+	>=dev-java/guice-4.0:4
+	>=dev-java/javax-inject-1:0"
 # Compile dependencies
 # POM: ../poms/jersey-guice-1.9.pom
 # javax.servlet:servlet-api:2.5 -> >=app-maven/servlet-api-2.5:0

@@ -20,10 +20,10 @@ MAVEN_ID="com.thoughtworks.paranamer:paranamer:2.6"
 
 # Common dependencies
 # POM: ../poms/paranamer-2.6.pom
-# javax.inject:javax.inject:1 -> >=app-maven/javax-inject-1:0
+# javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
 # POM: ../poms/paranamer-2.6.pom
 CDEPEND="
-	>=app-maven/javax-inject-1:0"
+	>=dev-java/javax-inject-1:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

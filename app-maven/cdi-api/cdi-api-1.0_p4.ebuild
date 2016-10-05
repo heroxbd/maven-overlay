@@ -22,16 +22,16 @@ MAVEN_ID="javax.enterprise:cdi-api:1.0-SP4"
 # POM: ../poms/cdi-api-1.0-SP4.pom
 # javax.annotation:jsr250-api:1.0 -> >=app-maven/jsr250-api-1.0:0
 # javax.el:el-api:2.2 -> >=app-maven/el-api-2.2:0
-# javax.inject:javax.inject:1 -> >=app-maven/javax-inject-1:0
+# javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
 # org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.0.CR2 -> >=app-maven/jboss-ejb-api-1.0.0:3.1_spec
 # org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1 -> >=app-maven/jboss-interceptors-api-1.0.0:1.1_spec
 # POM: ../poms/cdi-api-1.0-SP4.pom
 CDEPEND="
 	>=app-maven/el-api-2.2:0
-	>=app-maven/javax-inject-1:0
 	>=app-maven/jboss-ejb-api-1.0.0:3.1_spec
 	>=app-maven/jboss-interceptors-api-1.0.0:1.1_spec
-	>=app-maven/jsr250-api-1.0:0"
+	>=app-maven/jsr250-api-1.0:0
+	>=dev-java/javax-inject-1:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

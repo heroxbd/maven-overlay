@@ -22,7 +22,7 @@ MAVEN_ID="org.jboss.weld:weld-osgi-bundle:1.1.33.Final"
 # POM: ../poms/weld-osgi-bundle-1.1.33.Final.pom
 # com.google.guava:guava:13.0.1 -> >=dev-java/guava-07:0
 # javax.enterprise:cdi-api:1.0-SP4 -> >=app-maven/cdi-api-1.0_p4:0
-# javax.inject:javax.inject:1 -> >=app-maven/javax-inject-1:0
+# javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
 # org.javassist:javassist:3.18.1-GA -> >=dev-java/javassist-3.18.2:3
 # org.jboss.weld:weld-api:1.1.Final -> >=app-maven/weld-api-1.1:0
 # org.jboss.weld:weld-core:1.1.33.Final -> >=app-maven/weld-core-1.1.33:0
@@ -30,12 +30,12 @@ MAVEN_ID="org.jboss.weld:weld-osgi-bundle:1.1.33.Final"
 # POM: ../poms/weld-osgi-bundle-1.1.33.Final.pom
 CDEPEND="
 	>=app-maven/cdi-api-1.0_p4:0
-	>=app-maven/javax-inject-1:0
 	>=app-maven/weld-api-1.1:0
 	>=app-maven/weld-core-1.1.33:0
 	>=app-maven/weld-spi-1.1:0
 	>=dev-java/guava-07:0
-	>=dev-java/javassist-3.18.2:3"
+	>=dev-java/javassist-3.18.2:3
+	>=dev-java/javax-inject-1:0"
 # Compile dependencies
 # POM: ../poms/weld-osgi-bundle-1.1.33.Final.pom
 # org.slf4j:slf4j-jdk14:1.7.2 -> >=dev-java/slf4j-api-1.7.7:0
