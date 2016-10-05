@@ -32,8 +32,8 @@ MAVEN_ID="org.apache.ivy:ivy:2.4.0"
 # org.apache.ant:ant:1.7.1 -> >=dev-java/ant-core-1.9.2:0
 # org.apache.ant:ant-nodeps:1.7.1 -> >=dev-java/ant-nodeps-1.9.2:0
 # org.apache.ant:ant-trax:1.7.1 -> >=dev-java/ant-trax-1.9.2:0
-# org.bouncycastle:bcpg-jdk14:1.45 -> >=dev-java/bcpg-1.52:1.52
-# org.bouncycastle:bcprov-jdk14:1.45 -> >=dev-java/bcprov-1.38:1.38
+# org.bouncycastle:bcpg-jdk14:1.45 -> >=dev-java/bcpg-1.50:1.50
+# org.bouncycastle:bcprov-jdk14:1.45 -> >=dev-java/bcprov-1.45:1.45
 # oro:oro:2.0.8 -> >=app-maven/oro-2.0.8:0
 # POM: ../poms/ivy-2.4.0.pom
 CDEPEND="
@@ -43,8 +43,8 @@ CDEPEND="
 	>=dev-java/ant-core-1.9.2:0
 	>=dev-java/ant-nodeps-1.9.2:0
 	>=dev-java/ant-trax-1.9.2:0
-	>=dev-java/bcpg-1.52:1.52
-	>=dev-java/bcprov-1.38:1.38
+	>=dev-java/bcpg-1.50:1.50
+	>=dev-java/bcprov-1.45:1.45
 	>=dev-java/commons-httpclient-3.1:3
 	>=dev-java/commons-vfs-1.0:0
 	>=dev-java/jsch-0.1.52:0"
@@ -58,4 +58,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="jsch,jsch-agentproxy-bin,jsch-agentproxy-connector-factory,jsch-agentproxy-jsch,commons-httpclient-3,commons-vfs,ant-core,ant-nodeps,ant-trax,bcpg-1.52,bcprov-1.38,oro"
+JAVA_GENTOO_CLASSPATH="jsch,jsch-agentproxy-connector-factory,jsch-agentproxy-jsch,commons-httpclient-3,commons-vfs,ant-core,ant-nodeps,ant-trax,bcpg-1.50,bcprov-1.45,oro"

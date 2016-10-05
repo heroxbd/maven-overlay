@@ -20,14 +20,14 @@ MAVEN_ID="org.json4s:json4s-jackson_2.11:3.2.11"
 
 # Common dependencies
 # POM: ../poms/json4s-jackson_2.11-3.2.11.pom
-# com.fasterxml.jackson.core:jackson-databind:2.3.1 -> >=dev-java/jackson-databind-2.5.1:2
+# com.fasterxml.jackson.core:jackson-databind:2.3.1 -> >=dev-java/jackson-databind-2.5.2:2
 # org.json4s:json4s-core_2.11:3.2.11 -> >=app-maven/json4s-core-3.2.11:2.11
 # org.scala-lang:scala-library:2.11.0 -> >=app-maven/scala-library-2.11.7:0
 # POM: ../poms/json4s-jackson_2.11-3.2.11.pom
 CDEPEND="
 	>=app-maven/json4s-core-3.2.11:2.11
 	>=app-maven/scala-library-2.11.7:0
-	>=dev-java/jackson-databind-2.5.1:2"
+	>=dev-java/jackson-databind-2.5.2:2"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

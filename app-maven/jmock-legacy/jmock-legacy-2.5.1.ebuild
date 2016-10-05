@@ -21,13 +21,13 @@ MAVEN_ID="org.jmock:jmock-legacy:2.5.1"
 # Common dependencies
 # POM: ../poms/jmock-legacy-2.5.1.pom
 # cglib:cglib-nodep:2.1_3 -> >=app-maven/cglib-nodep-2.2.2:0
-# org.jmock:jmock:2.5.1 -> >=app-maven/jmock-2.5.1:0
+# org.jmock:jmock:2.5.1 -> >=dev-java/jmock-2.6.1:2
 # org.objenesis:objenesis:1.0 -> >=app-maven/objenesis-2.1:0
 # POM: ../poms/jmock-legacy-2.5.1.pom
 CDEPEND="
 	>=app-maven/cglib-nodep-2.2.2:0
-	>=app-maven/jmock-2.5.1:0
-	>=app-maven/objenesis-2.1:0"
+	>=app-maven/objenesis-2.1:0
+	>=dev-java/jmock-2.6.1:2"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -38,4 +38,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="cglib-nodep,jmock,objenesis"
+JAVA_GENTOO_CLASSPATH="cglib-nodep,jmock-2,objenesis"

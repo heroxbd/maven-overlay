@@ -20,7 +20,7 @@ MAVEN_ID="org.jboss.weld:weld-osgi-bundle:1.1.33.Final"
 
 # Common dependencies
 # POM: ../poms/weld-osgi-bundle-1.1.33.Final.pom
-# com.google.guava:guava:13.0.1 -> >=dev-java/guava-07:0
+# com.google.guava:guava:13.0.1 -> >=dev-java/guava-13.0.1:13
 # javax.enterprise:cdi-api:1.0-SP4 -> >=app-maven/cdi-api-1.0_p4:0
 # javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
 # org.javassist:javassist:3.18.1-GA -> >=dev-java/javassist-3.18.2:3
@@ -33,7 +33,7 @@ CDEPEND="
 	>=app-maven/weld-api-1.1:0
 	>=app-maven/weld-core-1.1.33:0
 	>=app-maven/weld-spi-1.1:0
-	>=dev-java/guava-07:0
+	>=dev-java/guava-13.0.1:13
 	>=dev-java/javassist-3.18.2:3
 	>=dev-java/javax-inject-1:0"
 # Compile dependencies
@@ -49,5 +49,5 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guava,cdi-api,javax-inject,javassist-3,weld-api,weld-core,weld-spi"
+JAVA_GENTOO_CLASSPATH="guava-13,cdi-api,javax-inject,javassist-3,weld-api,weld-core,weld-spi"
 JAVA_CLASSPATH_EXTRA="slf4j-api"

@@ -21,7 +21,7 @@ IUSE="doc source"
 MAVEN_ID="com.sun.jersey:jersey-core:1.9"
 # Compile dependencies
 # POM: ../poms/jersey-core-1.9.pom
-# javax.mail:mail:1.4 -> >=dev-java/oracle-javamail-1.5.5:0
+# javax.mail:mail:1.4 -> >=dev-java/oracle-javamail-1.5.2:0
 # javax.ws.rs:jsr311-api:1.1.1 -> >=app-maven/jsr311-api-1.1.1:0
 # javax.xml.bind:jaxb-api:2.1 -> >=app-maven/jaxb-api-2.1:0
 # org.osgi:osgi_R4_core:1.0 -> >=app-maven/osgi-bin-1.0:R4_core
@@ -31,7 +31,7 @@ DEPEND="
 	>=app-maven/jaxb-api-2.1:0
 	>=app-maven/jsr311-api-1.1.1:0
 	>=app-maven/osgi-bin-1.0:R4_core
-	>=dev-java/oracle-javamail-1.5.5:0"
+	>=dev-java/oracle-javamail-1.5.2:0"
 
 RDEPEND="
 	>=virtual/jre-1.7"

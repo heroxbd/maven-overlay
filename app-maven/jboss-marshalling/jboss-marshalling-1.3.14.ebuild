@@ -19,11 +19,11 @@ IUSE="doc source"
 MAVEN_ID="org.jboss.marshalling:jboss-marshalling:1.3.14.GA"
 # Compile dependencies
 # POM: ../poms/jboss-marshalling-1.3.14.GA.pom
-# org.jboss.modules:jboss-modules:1.1.0.Beta1 -> >=dev-java/jboss-modules-1.3.3:0
+# org.jboss.modules:jboss-modules:1.1.0.Beta1 -> >=dev-java/jboss-modules-1.3.0:0
 DEPEND="
 	>=virtual/jdk-1.6
 	app-arch/unzip
-	>=dev-java/jboss-modules-1.3.3:0"
+	>=dev-java/jboss-modules-1.3.0:0"
 
 RDEPEND="
 	>=virtual/jre-1.6"

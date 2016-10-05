@@ -24,27 +24,27 @@ MAVEN_ID="org.apache.avro:avro:1.7.7"
 # org.apache.commons:commons-compress:1.4.1 -> >=app-maven/commons-compress-1.4.1:0
 # org.codehaus.jackson:jackson-core-asl:1.9.13 -> >=app-maven/jackson-core-asl-1.9.13:0
 # org.codehaus.jackson:jackson-mapper-asl:1.9.13 -> >=app-maven/jackson-mapper-asl-1.9.13:0
-# org.slf4j:slf4j-api:1.6.4 -> >=dev-java/slf4j-simple-1.7.7:0
-# org.xerial.snappy:snappy-java:1.0.5 -> >=dev-java/snappy-1.1.0.1:1.1
+# org.slf4j:slf4j-api:1.6.4 -> >=dev-java/slf4j-api-1.7.7:0
+# org.xerial.snappy:snappy-java:1.0.5 -> >=dev-java/snappy-1.0.3_rc3:1.0
 # POM: ../poms/avro-1.7.7.pom
 CDEPEND="
 	>=app-maven/commons-compress-1.4.1:0
 	>=app-maven/jackson-core-asl-1.9.13:0
 	>=app-maven/jackson-mapper-asl-1.9.13:0
 	>=app-maven/paranamer-2.6:0
-	>=dev-java/slf4j-simple-1.7.7:0
-	>=dev-java/snappy-1.1.0.1:1.1"
+	>=dev-java/slf4j-api-1.7.7:0
+	>=dev-java/snappy-1.0.3_rc3:1.0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
 	app-arch/unzip"
 # Runtime dependencies
 # POM: ../poms/avro-1.7.7.pom
-# org.slf4j:slf4j-simple:1.6.4 -> >=dev-java/slf4j-simple-1.7.7:0
+# org.slf4j:slf4j-simple:1.6.4 -> >=dev-java/slf4j-api-1.7.7:0
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7
-	>=dev-java/slf4j-simple-1.7.7:0"
+	>=dev-java/slf4j-api-1.7.7:0"
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="paranamer,commons-compress,jackson-core-asl,jackson-mapper-asl,slf4j-simple,snappy-1.1,slf4j-simple"
+JAVA_GENTOO_CLASSPATH="paranamer,commons-compress,jackson-core-asl,jackson-mapper-asl,slf4j-api,snappy-1.0,slf4j-api"

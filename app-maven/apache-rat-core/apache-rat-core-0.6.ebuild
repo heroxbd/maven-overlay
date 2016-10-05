@@ -23,12 +23,12 @@ MAVEN_ID="org.apache.rat:apache-rat-core:0.6"
 # POM: ../poms/apache-rat-core-0.6.pom
 # commons-cli:commons-cli:1.1 -> >=dev-java/commons-cli-1.2:1
 # commons-collections:commons-collections:3.2 -> >=dev-java/commons-collections-3.2.1:0
-# commons-lang:commons-lang:2.1 -> >=dev-java/commons-lang-2.0:0
+# commons-lang:commons-lang:2.1 -> >=dev-java/commons-lang-2.6:2.1
 # POM: ../poms/apache-rat-core-0.6.pom
 CDEPEND="
 	>=dev-java/commons-cli-1.2:1
 	>=dev-java/commons-collections-3.2.1:0
-	>=dev-java/commons-lang-2.0:0"
+	>=dev-java/commons-lang-2.6:2.1"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -39,4 +39,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="commons-cli-1,commons-collections,commons-lang"
+JAVA_GENTOO_CLASSPATH="commons-cli-1,commons-collections,commons-lang-2.1"

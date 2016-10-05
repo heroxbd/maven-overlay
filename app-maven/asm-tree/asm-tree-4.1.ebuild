@@ -20,10 +20,10 @@ MAVEN_ID="org.ow2.asm:asm-tree:4.1"
 
 # Common dependencies
 # POM: ../poms/asm-tree-4.1.pom
-# org.ow2.asm:asm:4.1 -> >=dev-java/asm-3.3.1:3
+# org.ow2.asm:asm:4.1 -> >=dev-java/asm-5.0.3:4
 # POM: ../poms/asm-tree-4.1.pom
 CDEPEND="
-	>=dev-java/asm-3.3.1:3"
+	>=dev-java/asm-5.0.3:4"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -34,4 +34,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="asm-3"
+JAVA_GENTOO_CLASSPATH="asm-4"

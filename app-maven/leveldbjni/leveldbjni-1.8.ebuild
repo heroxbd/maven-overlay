@@ -20,12 +20,12 @@ MAVEN_ID="org.fusesource.leveldbjni:leveldbjni:1.8"
 
 # Common dependencies
 # POM: ../poms/leveldbjni-1.8.pom
-# org.fusesource.hawtjni:hawtjni-runtime:1.9 -> >=dev-java/maven-hawtjni-plugin-1.11:0
+# org.fusesource.hawtjni:hawtjni-runtime:1.9 -> >=dev-java/hawtjni-runtime-1.10:0
 # org.iq80.leveldb:leveldb-api:0.6 -> >=app-maven/leveldb-api-0.6:0
 # POM: ../poms/leveldbjni-1.8.pom
 CDEPEND="
 	>=app-maven/leveldb-api-0.6:0
-	>=dev-java/maven-hawtjni-plugin-1.11:0"
+	>=dev-java/hawtjni-runtime-1.10:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -36,4 +36,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="maven-hawtjni-plugin,leveldb-api"
+JAVA_GENTOO_CLASSPATH="hawtjni-runtime,leveldb-api"

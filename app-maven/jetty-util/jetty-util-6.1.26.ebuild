@@ -20,10 +20,10 @@ MAVEN_ID="org.mortbay.jetty:jetty-util:6.1.26"
 
 # Common dependencies
 # POM: ../poms/jetty-util-6.1.26.pom
-# org.slf4j:slf4j-api:1.3.1 -> >=dev-java/slf4j-simple-1.7.7:0
+# org.slf4j:slf4j-api:1.3.1 -> >=dev-java/slf4j-api-1.7.7:0
 # POM: ../poms/jetty-util-6.1.26.pom
 CDEPEND="
-	>=dev-java/slf4j-simple-1.7.7:0"
+	>=dev-java/slf4j-api-1.7.7:0"
 # Compile dependencies
 # POM: ../poms/jetty-util-6.1.26.pom
 # org.mortbay.jetty:servlet-api:2.5-20081211 -> >=app-maven/servlet-api-2.5.20081211:0
@@ -37,5 +37,5 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="slf4j-simple"
+JAVA_GENTOO_CLASSPATH="slf4j-api"
 JAVA_CLASSPATH_EXTRA="servlet-api"

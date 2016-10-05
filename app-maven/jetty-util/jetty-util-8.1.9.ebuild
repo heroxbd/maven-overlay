@@ -20,16 +20,16 @@ MAVEN_ID="org.eclipse.jetty:jetty-util:8.1.9.v20130131"
 # Compile dependencies
 # POM: ../poms/jetty-util-8.1.9.v20130131.pom
 # org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016 -> >=app-maven/javax-servlet-3.0.0:0
-# org.slf4j:slf4j-api:1.6.1 -> >=dev-java/slf4j-simple-1.7.7:0
+# org.slf4j:slf4j-api:1.6.1 -> >=dev-java/slf4j-api-1.7.7:0
 DEPEND="
 	>=virtual/jdk-1.7
 	app-arch/unzip
 	>=app-maven/javax-servlet-3.0.0:0
-	>=dev-java/slf4j-simple-1.7.7:0"
+	>=dev-java/slf4j-api-1.7.7:0"
 
 RDEPEND="
 	>=virtual/jre-1.7"
 
 S="${WORKDIR}"
 
-JAVA_CLASSPATH_EXTRA="javax-servlet,slf4j-simple"
+JAVA_CLASSPATH_EXTRA="javax-servlet,slf4j-api"

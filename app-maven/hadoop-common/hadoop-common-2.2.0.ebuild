@@ -20,7 +20,7 @@ MAVEN_ID="org.apache.hadoop:hadoop-common:2.2.0"
 
 # Common dependencies
 # POM: ../poms/hadoop-common-2.2.0.pom
-# com.google.guava:guava:11.0.2 -> >=dev-java/guava-07:0
+# com.google.guava:guava:11.0.2 -> >=dev-java/guava-12.0:12
 # com.google.protobuf:protobuf-java:2.5.0 -> >=app-maven/protobuf-java-2.5.0:0
 # com.jcraft:jsch:0.1.42 -> >=dev-java/jsch-0.1.52:0
 # com.sun.jersey:jersey-core:1.9 -> >=app-maven/jersey-core-1.9:0
@@ -31,7 +31,7 @@ MAVEN_ID="org.apache.hadoop:hadoop-common:2.2.0"
 # commons-configuration:commons-configuration:1.6 -> >=dev-java/commons-configuration-1.6:0
 # commons-httpclient:commons-httpclient:3.1 -> >=dev-java/commons-httpclient-3.1:3
 # commons-io:commons-io:2.1 -> >=dev-java/commons-io-2.4:1
-# commons-lang:commons-lang:2.5 -> >=dev-java/commons-lang-2.0:0
+# commons-lang:commons-lang:2.5 -> >=dev-java/commons-lang-2.6:2.1
 # commons-logging:commons-logging:1.1.1 -> >=dev-java/commons-logging-1.2:0
 # commons-net:commons-net:3.1 -> >=dev-java/commons-net-3.2:0
 # javax.servlet:servlet-api:2.5 -> >=app-maven/servlet-api-2.5:0
@@ -73,10 +73,10 @@ CDEPEND="
 	>=dev-java/commons-configuration-1.6:0
 	>=dev-java/commons-httpclient-3.1:3
 	>=dev-java/commons-io-2.4:1
-	>=dev-java/commons-lang-2.0:0
+	>=dev-java/commons-lang-2.6:2.1
 	>=dev-java/commons-logging-1.2:0
 	>=dev-java/commons-net-3.2:0
-	>=dev-java/guava-07:0
+	>=dev-java/guava-12.0:12
 	>=dev-java/jsch-0.1.52:0
 	>=dev-java/log4j-1.2.17:0
 	>=dev-java/slf4j-api-1.7.7:0"
@@ -104,5 +104,5 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guava,protobuf-java,jsch,jersey-core,jersey-json,jersey-server,commons-cli-1,commons-codec,commons-configuration,commons-httpclient-3,commons-io-1,commons-lang,commons-logging,commons-net,servlet-api,log4j,jets3t,avro,commons-compress,commons-math,hadoop-annotations,hadoop-auth,zookeeper,jackson-core-asl,jackson-mapper-asl,jetty,jetty-util,slf4j-api,xmlenc-bin,commons-el,jsp-api,slf4j-api,jasper-compiler-bin,jasper-runtime-bin"
+JAVA_GENTOO_CLASSPATH="guava-12,protobuf-java,jsch,jersey-core,jersey-json,jersey-server,commons-cli-1,commons-codec,commons-configuration,commons-httpclient-3,commons-io-1,commons-lang-2.1,commons-logging,commons-net,servlet-api,log4j,jets3t,avro,commons-compress,commons-math,hadoop-annotations,hadoop-auth,zookeeper,jackson-core-asl,jackson-mapper-asl,jetty,jetty-util,slf4j-api,xmlenc-bin,commons-el,jsp-api,slf4j-api,jasper-compiler-bin,jasper-runtime-bin"
 JAVA_CLASSPATH_EXTRA="ant-core"

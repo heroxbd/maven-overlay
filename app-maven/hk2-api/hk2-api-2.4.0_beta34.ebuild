@@ -20,7 +20,7 @@ MAVEN_ID="org.glassfish.hk2:hk2-api:2.4.0-b34"
 
 # Common dependencies
 # POM: ../poms/hk2-api-2.4.0-b34.pom
-# javax.inject:javax.inject:1 -> >=app-maven/javax-inject-1:0
+# javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
 # org.glassfish.hk2:hk2-utils:2.4.0-b34 -> >=app-maven/hk2-utils-2.4.0_beta34:0
 # org.glassfish.hk2:osgi-resource-locator:1.0.1 -> >=app-maven/osgi-resource-locator-1.0.1:0
 # org.glassfish.hk2.external:aopalliance-repackaged:2.4.0-b34 -> >=app-maven/aopalliance-repackaged-2.4.0_beta34:0
@@ -28,8 +28,8 @@ MAVEN_ID="org.glassfish.hk2:hk2-api:2.4.0-b34"
 CDEPEND="
 	>=app-maven/aopalliance-repackaged-2.4.0_beta34:0
 	>=app-maven/hk2-utils-2.4.0_beta34:0
-	>=app-maven/javax-inject-1:0
-	>=app-maven/osgi-resource-locator-1.0.1:0"
+	>=app-maven/osgi-resource-locator-1.0.1:0
+	>=dev-java/javax-inject-1:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

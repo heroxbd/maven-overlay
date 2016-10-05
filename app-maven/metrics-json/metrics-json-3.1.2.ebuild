@@ -20,7 +20,7 @@ MAVEN_ID="io.dropwizard.metrics:metrics-json:3.1.2"
 
 # Common dependencies
 # POM: ../poms/metrics-json-3.1.2.pom
-# com.fasterxml.jackson.core:jackson-databind:2.4.2 -> >=dev-java/jackson-databind-2.5.1:2
+# com.fasterxml.jackson.core:jackson-databind:2.4.2 -> >=dev-java/jackson-databind-2.5.2:2
 # io.dropwizard.metrics:metrics-core:3.1.2 -> >=app-maven/metrics-core-3.1.2:0
 # io.dropwizard.metrics:metrics-healthchecks:3.1.2 -> >=app-maven/metrics-healthchecks-3.1.2:0
 # org.slf4j:slf4j-api:1.7.7 -> >=dev-java/slf4j-api-1.7.7:0
@@ -28,7 +28,7 @@ MAVEN_ID="io.dropwizard.metrics:metrics-json:3.1.2"
 CDEPEND="
 	>=app-maven/metrics-core-3.1.2:0
 	>=app-maven/metrics-healthchecks-3.1.2:0
-	>=dev-java/jackson-databind-2.5.1:2
+	>=dev-java/jackson-databind-2.5.2:2
 	>=dev-java/slf4j-api-1.7.7:0"
 
 DEPEND="${CDEPEND}

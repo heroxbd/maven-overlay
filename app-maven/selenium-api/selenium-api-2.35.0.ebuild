@@ -20,11 +20,11 @@ MAVEN_ID="org.seleniumhq.selenium:selenium-api:2.35.0"
 
 # Common dependencies
 # POM: ../poms/selenium-api-2.35.0.pom
-# com.google.guava:guava:14.0 -> >=dev-java/guava-07:0
+# com.google.guava:guava:14.0 -> >=dev-java/guava-14.0.1:14
 # org.json:json:20080701 -> >=dev-java/json-20150729:0
 # POM: ../poms/selenium-api-2.35.0.pom
 CDEPEND="
-	>=dev-java/guava-07:0
+	>=dev-java/guava-14.0.1:14
 	>=dev-java/json-20150729:0"
 
 DEPEND="${CDEPEND}
@@ -36,4 +36,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guava,json"
+JAVA_GENTOO_CLASSPATH="guava-14,json"

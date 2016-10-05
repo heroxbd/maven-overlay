@@ -28,7 +28,7 @@ MAVEN_ID="org.apache.avro:avro-ipc:1.7.7"
 # org.mortbay.jetty:jetty:6.1.26 -> >=app-maven/jetty-6.1.26:0
 # org.mortbay.jetty:jetty-util:6.1.26 -> >=app-maven/jetty-util-6.1.26:0
 # org.mortbay.jetty:servlet-api:2.5-20081211 -> >=app-maven/servlet-api-2.5.20081211:0
-# org.slf4j:slf4j-api:1.6.4 -> >=dev-java/slf4j-simple-1.7.7:0
+# org.slf4j:slf4j-api:1.6.4 -> >=dev-java/slf4j-api-1.7.7:0
 # POM: ../poms/avro-ipc-1.7.7.pom
 CDEPEND="
 	>=app-maven/avro-1.7.7:0
@@ -38,7 +38,7 @@ CDEPEND="
 	>=app-maven/jetty-util-6.1.26:0
 	>=app-maven/netty-3.8.0:0
 	>=app-maven/servlet-api-2.5.20081211:0
-	>=dev-java/slf4j-simple-1.7.7:0
+	>=dev-java/slf4j-api-1.7.7:0
 	>=dev-java/velocity-1.7:0"
 
 DEPEND="${CDEPEND}
@@ -46,11 +46,11 @@ DEPEND="${CDEPEND}
 	app-arch/unzip"
 # Runtime dependencies
 # POM: ../poms/avro-ipc-1.7.7.pom
-# org.slf4j:slf4j-simple:1.6.4 -> >=dev-java/slf4j-simple-1.7.7:0
+# org.slf4j:slf4j-simple:1.6.4 -> >=dev-java/slf4j-api-1.7.7:0
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7
-	>=dev-java/slf4j-simple-1.7.7:0"
+	>=dev-java/slf4j-api-1.7.7:0"
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="netty,avro,velocity,jackson-core-asl,jackson-mapper-asl,jetty,jetty-util,servlet-api,slf4j-simple,slf4j-simple"
+JAVA_GENTOO_CLASSPATH="netty,avro,velocity,jackson-core-asl,jackson-mapper-asl,jetty,jetty-util,servlet-api,slf4j-api,slf4j-api"

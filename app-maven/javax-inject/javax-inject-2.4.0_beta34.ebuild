@@ -20,10 +20,10 @@ MAVEN_ID="org.glassfish.hk2.external:javax.inject:2.4.0-b34"
 
 # Common dependencies
 # POM: ../poms/javax.inject-2.4.0-b34.pom
-# javax.inject:javax.inject:1 -> >=app-maven/javax-inject-1:0
+# javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
 # POM: ../poms/javax.inject-2.4.0-b34.pom
 CDEPEND="
-	>=app-maven/javax-inject-1:0"
+	>=dev-java/javax-inject-1:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

@@ -20,10 +20,10 @@ MAVEN_ID="org.glassfish.jersey.bundles.repackaged:jersey-guava:2.22.2"
 
 # Common dependencies
 # POM: ../poms/jersey-guava-2.22.2.pom
-# com.google.guava:guava:18.0 -> >=dev-java/guava-07:0
+# com.google.guava:guava:18.0 -> >=dev-java/guava-18.0:18
 # POM: ../poms/jersey-guava-2.22.2.pom
 CDEPEND="
-	>=dev-java/guava-07:0"
+	>=dev-java/guava-18.0:18"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -34,4 +34,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guava"
+JAVA_GENTOO_CLASSPATH="guava-18"

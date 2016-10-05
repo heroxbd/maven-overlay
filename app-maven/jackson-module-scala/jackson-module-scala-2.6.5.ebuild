@@ -20,9 +20,9 @@ MAVEN_ID="com.fasterxml.jackson.module:jackson-module-scala_2.11:2.6.5"
 
 # Common dependencies
 # POM: ../poms/jackson-module-scala_2.11-2.6.5.pom
-# com.fasterxml.jackson.core:jackson-annotations:2.6.5 -> >=dev-java/jackson-annotations-2.5.1:2
-# com.fasterxml.jackson.core:jackson-core:2.6.5 -> >=dev-java/jackson-2.5.1:2
-# com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.5.2:2
+# com.fasterxml.jackson.core:jackson-annotations:2.6.5 -> >=dev-java/jackson-annotations-2.5.2:2
+# com.fasterxml.jackson.core:jackson-core:2.6.5 -> >=dev-java/jackson-2.5.2:2
+# com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.5.1:2
 # com.fasterxml.jackson.module:jackson-module-paranamer:2.6.5 -> >=app-maven/jackson-module-paranamer-2.6.5:0
 # org.scala-lang:scala-library:2.11.7 -> >=app-maven/scala-library-2.11.7:0
 # org.scala-lang:scala-reflect:2.11.7 -> >=app-maven/scala-reflect-2.11.7:0
@@ -31,9 +31,9 @@ CDEPEND="
 	>=app-maven/jackson-module-paranamer-2.6.5:0
 	>=app-maven/scala-library-2.11.7:0
 	>=app-maven/scala-reflect-2.11.7:0
-	>=dev-java/jackson-2.5.1:2
-	>=dev-java/jackson-annotations-2.5.1:2
-	>=dev-java/jackson-databind-2.5.2:2"
+	>=dev-java/jackson-2.5.2:2
+	>=dev-java/jackson-annotations-2.5.2:2
+	>=dev-java/jackson-databind-2.5.1:2"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

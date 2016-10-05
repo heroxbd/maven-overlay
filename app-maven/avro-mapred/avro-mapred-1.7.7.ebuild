@@ -24,13 +24,13 @@ MAVEN_ID="org.apache.avro:avro-mapred:1.7.7"
 # org.apache.avro:avro-ipc:1.7.7 -> >=app-maven/avro-ipc-1.7.7:0
 # org.codehaus.jackson:jackson-core-asl:1.9.13 -> >=app-maven/jackson-core-asl-1.9.13:0
 # org.codehaus.jackson:jackson-mapper-asl:1.9.13 -> >=app-maven/jackson-mapper-asl-1.9.13:0
-# org.slf4j:slf4j-api:1.6.4 -> >=dev-java/slf4j-simple-1.7.7:0
+# org.slf4j:slf4j-api:1.6.4 -> >=dev-java/slf4j-api-1.7.7:0
 # POM: ../poms/avro-mapred-1.7.7.pom
 CDEPEND="
 	>=app-maven/avro-ipc-1.7.7:0
 	>=app-maven/jackson-core-asl-1.9.13:0
 	>=app-maven/jackson-mapper-asl-1.9.13:0
-	>=dev-java/slf4j-simple-1.7.7:0"
+	>=dev-java/slf4j-api-1.7.7:0"
 # Compile dependencies
 # POM: ../poms/avro-mapred-1.7.7.pom
 # org.apache.hadoop:hadoop-core:0.20.205.0 -> >=app-maven/hadoop-core-bin-0.20.205.0:0
@@ -40,12 +40,12 @@ DEPEND="${CDEPEND}
 	>=app-maven/hadoop-core-bin-0.20.205.0:0"
 # Runtime dependencies
 # POM: ../poms/avro-mapred-1.7.7.pom
-# org.slf4j:slf4j-simple:1.6.4 -> >=dev-java/slf4j-simple-1.7.7:0
+# org.slf4j:slf4j-simple:1.6.4 -> >=dev-java/slf4j-api-1.7.7:0
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7
-	>=dev-java/slf4j-simple-1.7.7:0"
+	>=dev-java/slf4j-api-1.7.7:0"
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="avro-ipc,avro-ipc,jackson-core-asl,jackson-mapper-asl,slf4j-simple,slf4j-simple"
+JAVA_GENTOO_CLASSPATH="avro-ipc,avro-ipc,jackson-core-asl,jackson-mapper-asl,slf4j-api,slf4j-api"
 JAVA_CLASSPATH_EXTRA="hadoop-core-bin"

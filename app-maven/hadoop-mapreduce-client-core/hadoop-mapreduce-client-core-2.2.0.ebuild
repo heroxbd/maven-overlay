@@ -39,10 +39,10 @@ CDEPEND="
 	>=dev-java/slf4j-api-1.7.7:0"
 # Compile dependencies
 # POM: ../poms/hadoop-mapreduce-client-core-2.2.0.pom
-# com.google.guava:guava:11.0.2 -> >=dev-java/guava-07:0
+# com.google.guava:guava:11.0.2 -> >=dev-java/guava-12.0:12
 # commons-cli:commons-cli:1.2 -> >=dev-java/commons-cli-1.2:1
 # commons-codec:commons-codec:1.4 -> >=dev-java/commons-codec-1.7:0
-# commons-lang:commons-lang:2.5 -> >=dev-java/commons-lang-2.0:0
+# commons-lang:commons-lang:2.5 -> >=dev-java/commons-lang-2.6:2.1
 # commons-logging:commons-logging:1.1.1 -> >=dev-java/commons-logging-1.2:0
 # org.apache.hadoop:hadoop-common:2.2.0 -> >=app-maven/hadoop-common-2.2.0:0
 DEPEND="${CDEPEND}
@@ -51,9 +51,9 @@ DEPEND="${CDEPEND}
 	>=app-maven/hadoop-common-2.2.0:0
 	>=dev-java/commons-cli-1.2:1
 	>=dev-java/commons-codec-1.7:0
-	>=dev-java/commons-lang-2.0:0
+	>=dev-java/commons-lang-2.6:2.1
 	>=dev-java/commons-logging-1.2:0
-	>=dev-java/guava-07:0"
+	>=dev-java/guava-12.0:12"
 
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7"
@@ -61,4 +61,4 @@ RDEPEND="${CDEPEND}
 S="${WORKDIR}"
 
 JAVA_GENTOO_CLASSPATH="guice-4,protobuf-java,netty,avro,hadoop-annotations,hadoop-yarn-common,slf4j-api,slf4j-api"
-JAVA_CLASSPATH_EXTRA="guava,commons-cli-1,commons-codec,commons-lang,commons-logging,hadoop-common"
+JAVA_CLASSPATH_EXTRA="guava-12,commons-cli-1,commons-codec,commons-lang-2.1,commons-logging,hadoop-common"

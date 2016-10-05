@@ -36,12 +36,12 @@ CDEPEND="
 	>=app-maven/unused-1.0.0:0"
 # Compile dependencies
 # POM: ../poms/spark-unsafe_2.11-2.0.0.pom
-# com.google.guava:guava:14.0.1 -> >=dev-java/guava-07:0
+# com.google.guava:guava:14.0.1 -> >=dev-java/guava-14.0.1:14
 # org.slf4j:slf4j-api:1.7.16 -> >=dev-java/slf4j-api-1.7.7:0
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
 	app-arch/unzip
-	>=dev-java/guava-07:0
+	>=dev-java/guava-14.0.1:14
 	>=dev-java/slf4j-api-1.7.7:0"
 
 RDEPEND="${CDEPEND}
@@ -50,4 +50,4 @@ RDEPEND="${CDEPEND}
 S="${WORKDIR}"
 
 JAVA_GENTOO_CLASSPATH="jsr305-bin,chill-2.11,spark-tags-2.11,unused"
-JAVA_CLASSPATH_EXTRA="guava,slf4j-api"
+JAVA_CLASSPATH_EXTRA="guava-14,slf4j-api"

@@ -20,7 +20,7 @@ MAVEN_ID="org.parboiled:parboiled-java:1.1.6"
 
 # Common dependencies
 # POM: ../poms/parboiled-java-1.1.6.pom
-# org.ow2.asm:asm:4.1 -> >=dev-java/asm-3.3.1:3
+# org.ow2.asm:asm:4.1 -> >=dev-java/asm-5.0.3:4
 # org.ow2.asm:asm-analysis:4.1 -> >=app-maven/asm-analysis-4.1:0
 # org.ow2.asm:asm-tree:4.1 -> >=app-maven/asm-tree-4.1:0
 # org.ow2.asm:asm-util:4.1 -> >=app-maven/asm-util-4.1:0
@@ -31,7 +31,7 @@ CDEPEND="
 	>=app-maven/asm-tree-4.1:0
 	>=app-maven/asm-util-4.1:0
 	>=app-maven/parboiled-core-1.1.6:0
-	>=dev-java/asm-3.3.1:3"
+	>=dev-java/asm-5.0.3:4"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -42,4 +42,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="asm-3,asm-analysis,asm-tree,asm-util,parboiled-core"
+JAVA_GENTOO_CLASSPATH="asm-4,asm-analysis,asm-tree,asm-util,parboiled-core"

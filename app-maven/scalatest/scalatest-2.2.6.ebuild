@@ -26,7 +26,7 @@ MAVEN_ID="org.scalatest:scalatest_2.11:2.2.6"
 # org.easymock:easymockclassextension:3.1 -> >=app-maven/easymockclassextension-3.1:0
 # org.jmock:jmock-legacy:2.5.1 -> >=app-maven/jmock-legacy-2.5.1:0
 # org.mockito:mockito-all:1.9.0 -> >=app-maven/mockito-all-1.9.0:0
-# org.ow2.asm:asm-all:4.1 -> >=dev-java/asm-3.3.1:3
+# org.ow2.asm:asm-all:4.1 -> >=dev-java/asm-5.0.3:4
 # org.pegdown:pegdown:1.4.2 -> >=app-maven/pegdown-1.4.2:0
 # org.scala-lang:scala-library:2.11.7 -> >=app-maven/scala-library-2.11.7:0
 # org.scala-lang:scala-reflect:2.11.7 -> >=app-maven/scala-reflect-2.11.7:0
@@ -48,7 +48,7 @@ CDEPEND="
 	>=app-maven/selenium-java-2.35.0:0
 	>=app-maven/test-interface-1.0:0
 	>=dev-java/ant-core-1.9.2:0
-	>=dev-java/asm-3.3.1:3
+	>=dev-java/asm-5.0.3:4
 	>=dev-java/guice-4.0:4
 	>=dev-java/junit-4.12:4
 	>=dev-java/testng-6.9.10:0"
@@ -65,6 +65,6 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guice-4,junit-4,ant-core,easymockclassextension,jmock-legacy,mockito-all,asm-3,pegdown,scala-library,scala-reflect,scala-xml-2.11,test-interface,scalacheck-2.11,selenium-java,testng"
+JAVA_GENTOO_CLASSPATH="guice-4,junit-4,ant-core,easymockclassextension,jmock-legacy,mockito-all,asm-4,pegdown,scala-library,scala-reflect,scala-xml-2.11,test-interface,scalacheck-2.11,selenium-java,testng"
 JAVA_CLASSPATH_EXTRA="scala-compiler"
 JAVA_TESTING_FRAMEWORK="junit"

@@ -21,7 +21,7 @@ MAVEN_ID="org.jboss.weld:weld-core:1.1.33.Final"
 # Common dependencies
 # POM: ../poms/weld-core-1.1.33.Final.pom
 # ch.qos.cal10n:cal10n-api:0.7.7 -> >=app-maven/cal10n-api-0.7.7:0
-# com.google.guava:guava:13.0.1 -> >=dev-java/guava-07:0
+# com.google.guava:guava:13.0.1 -> >=dev-java/guava-13.0.1:13
 # javax.annotation:jsr250-api:1.0 -> >=app-maven/jsr250-api-1.0:0
 # javax.el:el-api:2.2 -> >=app-maven/el-api-2.2:0
 # javax.enterprise:cdi-api:1.0-SP4 -> >=app-maven/cdi-api-1.0_p4:0
@@ -56,7 +56,7 @@ CDEPEND="
 	>=app-maven/validation-api-1.0.0:0
 	>=app-maven/weld-api-1.1:0
 	>=app-maven/weld-spi-1.1:0
-	>=dev-java/guava-07:0
+	>=dev-java/guava-13.0.1:13
 	>=dev-java/javassist-3.18.2:3
 	>=dev-java/slf4j-api-1.7.7:0"
 
@@ -69,4 +69,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="cal10n-api,guava,jsr250-api,el-api,cdi-api,jsf-api,persistence-api,servlet-api,jsp-api,jta,validation-api,annotations-bin,javassist-3,jboss-ejb-api-3.1_spec,jboss-interceptors-api-1.1_spec,weld-api,weld-spi,slf4j-api,slf4j-api"
+JAVA_GENTOO_CLASSPATH="cal10n-api,guava-13,jsr250-api,el-api,cdi-api,jsf-api,persistence-api,servlet-api,jsp-api,jta,validation-api,annotations-bin,javassist-3,jboss-ejb-api-3.1_spec,jboss-interceptors-api-1.1_spec,weld-api,weld-spi,slf4j-api,slf4j-api"

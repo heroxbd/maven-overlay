@@ -21,12 +21,12 @@ MAVEN_ID="com.fasterxml.jackson.module:jackson-module-paranamer:2.6.5"
 
 # Common dependencies
 # POM: ../poms/jackson-module-paranamer-2.6.5.pom
-# com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.5.2:2
+# com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.5.1:2
 # com.thoughtworks.paranamer:paranamer:2.6 -> >=app-maven/paranamer-2.6:0
 # POM: ../poms/jackson-module-paranamer-2.6.5.pom
 CDEPEND="
 	>=app-maven/paranamer-2.6:0
-	>=dev-java/jackson-databind-2.5.2:2"
+	>=dev-java/jackson-databind-2.5.1:2"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

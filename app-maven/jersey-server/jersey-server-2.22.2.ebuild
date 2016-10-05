@@ -29,7 +29,7 @@ MAVEN_ID="org.glassfish.jersey.core:jersey-server:2.22.2"
 # org.glassfish.jersey.core:jersey-client:2.22.2 -> >=app-maven/jersey-client-2.22.2:0
 # org.glassfish.jersey.core:jersey-common:2.22.2 -> >=app-maven/jersey-common-2.22.2:0
 # org.glassfish.jersey.media:jersey-media-jaxb:2.22.2 -> >=app-maven/jersey-media-jaxb-2.22.2:0
-# org.ow2.asm:asm-debug-all:5.0.4 -> >=dev-java/asm-3.3.1:3
+# org.ow2.asm:asm-debug-all:5.0.4 -> >=dev-java/asm-5.0.3:4
 # POM: ../poms/jersey-server-2.22.2.pom
 CDEPEND="
 	>=app-maven/hk2-api-2.4.0_beta34:0
@@ -41,7 +41,7 @@ CDEPEND="
 	>=app-maven/jersey-common-2.22.2:0
 	>=app-maven/jersey-media-jaxb-2.22.2:0
 	>=app-maven/validation-api-1.0.0:0
-	>=dev-java/asm-3.3.1:3"
+	>=dev-java/asm-5.0.3:4"
 # Compile dependencies
 # POM: ../poms/jersey-server-2.22.2.pom
 # org.osgi:org.osgi.core:4.2.0 -> >=app-maven/org-osgi-core-4.2.0:0
@@ -55,5 +55,5 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="javax-annotation-api,validation-api,javax-ws-rs-api,hk2-api,hk2-locator,javax-inject,jersey-client,jersey-common,jersey-media-jaxb,asm-3"
+JAVA_GENTOO_CLASSPATH="javax-annotation-api,validation-api,javax-ws-rs-api,hk2-api,hk2-locator,javax-inject,jersey-client,jersey-common,jersey-media-jaxb,asm-4"
 JAVA_CLASSPATH_EXTRA="org-osgi-core"
