@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/selenium-chrome-driver-2.35.0.pom --download-uri http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/2.35.0/selenium-chrome-driver-2.35.0-sources.jar --slot 0 --keywords "~amd64" --ebuild selenium-chrome-driver-2.35.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-chrome-driver-2.35.0.pom --download-uri http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/2.35.0/selenium-chrome-driver-2.35.0-sources.jar --slot 0 --keywords "~amd64" --ebuild selenium-chrome-driver-2.35.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.seleniumhq.selenium:selenium-chrome-driver:2.35.0"
 
 # Common dependencies
-# POM: ../poms/selenium-chrome-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-chrome-driver-2.35.0.pom
 # org.seleniumhq.selenium:selenium-remote-driver:2.35.0 -> >=app-maven/selenium-remote-driver-2.35.0:0
-# POM: ../poms/selenium-chrome-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-chrome-driver-2.35.0.pom
 CDEPEND="
 	>=app-maven/selenium-remote-driver-2.35.0:0"
 

@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/leveldbjni-osx-1.8.pom --download-uri http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-osx/1.8/leveldbjni-osx-1.8.jar --slot 0 --keywords "~amd64" --ebuild leveldbjni-osx-bin-1.8.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldbjni-osx-1.8.pom --download-uri http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-osx/1.8/leveldbjni-osx-1.8.jar --slot 0 --keywords "~amd64" --ebuild leveldbjni-osx-bin-1.8.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-binjar
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-os
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.fusesource.leveldbjni:leveldbjni-osx:1.8"
 
 # Common dependencies
-# POM: ../poms/leveldbjni-osx-1.8.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldbjni-osx-1.8.pom
 # org.fusesource.leveldbjni:leveldbjni:1.8 -> >=app-maven/leveldbjni-1.8:0
-# POM: ../poms/leveldbjni-osx-1.8.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldbjni-osx-1.8.pom
 CDEPEND="
 	>=app-maven/leveldbjni-1.8:0"
 

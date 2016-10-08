@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/htmlunit-2.12.pom --download-uri http://central.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.12/htmlunit-2.12-sources.jar --slot 0 --keywords "~amd64" --ebuild htmlunit-2.12.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/htmlunit-2.12.pom --download-uri http://central.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.12/htmlunit-2.12-sources.jar --slot 0 --keywords "~amd64" --ebuild htmlunit-2.12.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,11 +17,11 @@ SRC_URI="http://central.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.12/
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="net.sourceforge.htmlunit:htmlunit:2.12"
 
 # Common dependencies
-# POM: ../poms/htmlunit-2.12.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/htmlunit-2.12.pom
 # commons-codec:commons-codec:1.7 -> >=dev-java/commons-codec-1.7:0
 # commons-collections:commons-collections:3.2.1 -> >=dev-java/commons-collections-3.2.1:0
 # commons-io:commons-io:2.4 -> >=dev-java/commons-io-2.4:1
@@ -33,7 +35,7 @@ MAVEN_ID="net.sourceforge.htmlunit:htmlunit:2.12"
 # org.eclipse.jetty:jetty-websocket:8.1.9.v20130131 -> >=app-maven/jetty-websocket-8.1.9:0
 # xalan:xalan:2.7.1 -> >=dev-java/xalan-2.7.2:0
 # xerces:xercesImpl:2.10.0 -> >=dev-java/xerces-2.11.0:2
-# POM: ../poms/htmlunit-2.12.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/htmlunit-2.12.pom
 CDEPEND="
 	>=app-maven/commons-lang3-3.3.2:0
 	>=app-maven/cssparser-0.9.9:0

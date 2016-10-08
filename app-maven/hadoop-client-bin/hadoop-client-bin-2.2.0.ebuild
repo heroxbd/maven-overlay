@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/hadoop-client-2.2.0.pom --download-uri http://central.maven.org/maven2/org/apache/hadoop/hadoop-client/2.2.0/hadoop-client-2.2.0.jar --slot 0 --keywords "~amd64" --ebuild hadoop-client-bin-2.2.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-client-2.2.0.pom --download-uri http://central.maven.org/maven2/org/apache/hadoop/hadoop-client/2.2.0/hadoop-client-2.2.0.jar --slot 0 --keywords "~amd64" --ebuild hadoop-client-bin-2.2.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-binjar
 
@@ -15,11 +17,11 @@ SRC_URI="http://central.maven.org/maven2/org/apache/hadoop/hadoop-client/2.2.0/h
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.hadoop:hadoop-client:2.2.0"
 
 # Common dependencies
-# POM: ../poms/hadoop-client-2.2.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-client-2.2.0.pom
 # org.apache.hadoop:hadoop-annotations:2.2.0 -> >=app-maven/hadoop-annotations-2.2.0:0
 # org.apache.hadoop:hadoop-common:2.2.0 -> >=app-maven/hadoop-common-2.2.0:0
 # org.apache.hadoop:hadoop-hdfs:2.2.0 -> >=app-maven/hadoop-hdfs-2.2.0:0
@@ -27,7 +29,7 @@ MAVEN_ID="org.apache.hadoop:hadoop-client:2.2.0"
 # org.apache.hadoop:hadoop-mapreduce-client-core:2.2.0 -> >=app-maven/hadoop-mapreduce-client-core-2.2.0:0
 # org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.2.0 -> >=app-maven/hadoop-mapreduce-client-jobclient-2.2.0:0
 # org.apache.hadoop:hadoop-yarn-api:2.2.0 -> >=app-maven/hadoop-yarn-api-2.2.0:0
-# POM: ../poms/hadoop-client-2.2.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-client-2.2.0.pom
 CDEPEND="
 	>=app-maven/hadoop-annotations-2.2.0:0
 	>=app-maven/hadoop-common-2.2.0:0

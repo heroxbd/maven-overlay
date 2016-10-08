@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/gmbal-api-only-3.0.0-b023.pom --download-uri http://central.maven.org/maven2/org/glassfish/gmbal/gmbal-api-only/3.0.0-b023/gmbal-api-only-3.0.0-b023.jar --slot 0 --keywords "~amd64" --ebuild gmbal-api-only-bin-3.0.0_beta023.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/gmbal-api-only-3.0.0-b023.pom --download-uri http://central.maven.org/maven2/org/glassfish/gmbal/gmbal-api-only/3.0.0-b023/gmbal-api-only-3.0.0-b023.jar --slot 0 --keywords "~amd64" --ebuild gmbal-api-only-bin-3.0.0_beta023.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-binjar
 
@@ -15,15 +17,15 @@ SRC_URI="http://central.maven.org/maven2/org/glassfish/gmbal/gmbal-api-only/3.0.
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.glassfish.gmbal:gmbal-api-only:3.0.0-b023"
 
 # Common dependencies
-# POM: ../poms/gmbal-api-only-3.0.0-b023.pom
-# org.glassfish.external:management-api:3.0.0-b012 -> >=app-maven/management-api-bin-3.0.0_beta012:0
-# POM: ../poms/gmbal-api-only-3.0.0-b023.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/gmbal-api-only-3.0.0-b023.pom
+# org.glassfish.external:management-api:3.0.0-b012 -> >=app-maven/management-api-bin-3.0.0:0
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/gmbal-api-only-3.0.0-b023.pom
 CDEPEND="
-	>=app-maven/management-api-bin-3.0.0_beta012:0"
+	>=app-maven/management-api-bin-3.0.0:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

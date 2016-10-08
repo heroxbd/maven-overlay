@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/selenium-android-driver-2.35.0.pom --download-uri http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-android-driver/2.35.0/selenium-android-driver-2.35.0-sources.jar --slot 0 --keywords "~amd64" --ebuild selenium-android-driver-2.35.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-android-driver-2.35.0.pom --download-uri http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-android-driver/2.35.0/selenium-android-driver-2.35.0-sources.jar --slot 0 --keywords "~amd64" --ebuild selenium-android-driver-2.35.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,17 +17,17 @@ SRC_URI="http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-androi
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.seleniumhq.selenium:selenium-android-driver:2.35.0"
 
 # Common dependencies
-# POM: ../poms/selenium-android-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-android-driver-2.35.0.pom
 # org.seleniumhq.selenium:selenium-remote-driver:2.35.0 -> >=app-maven/selenium-remote-driver-2.35.0:0
-# POM: ../poms/selenium-android-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-android-driver-2.35.0.pom
 CDEPEND="
 	>=app-maven/selenium-remote-driver-2.35.0:0"
 # Compile dependencies
-# POM: ../poms/selenium-android-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-android-driver-2.35.0.pom
 # com.google.android:android:4.0.1.2 -> >=app-maven/android-4.0.1.2:0
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

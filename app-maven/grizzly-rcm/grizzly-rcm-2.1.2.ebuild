@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/grizzly-rcm-2.1.2.pom --download-uri http://central.maven.org/maven2/org/glassfish/grizzly/grizzly-rcm/2.1.2/grizzly-rcm-2.1.2-sources.jar --slot 0 --keywords "~amd64" --ebuild grizzly-rcm-2.1.2.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/grizzly-rcm-2.1.2.pom --download-uri http://central.maven.org/maven2/org/glassfish/grizzly/grizzly-rcm/2.1.2/grizzly-rcm-2.1.2-sources.jar --slot 0 --keywords "~amd64" --ebuild grizzly-rcm-2.1.2.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/org/glassfish/grizzly/grizzly-rcm/2.1.2
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.glassfish.grizzly:grizzly-rcm:2.1.2"
 
 # Common dependencies
-# POM: ../poms/grizzly-rcm-2.1.2.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/grizzly-rcm-2.1.2.pom
 # org.glassfish.grizzly:grizzly-framework:2.1.2 -> >=app-maven/grizzly-framework-2.1.2:0
-# POM: ../poms/grizzly-rcm-2.1.2.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/grizzly-rcm-2.1.2.pom
 CDEPEND="
 	>=app-maven/grizzly-framework-2.1.2:0"
 

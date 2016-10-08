@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/org.osgi.compendium-1.4.0.pom --download-uri http://central.maven.org/maven2/org/apache/felix/org.osgi.compendium/1.4.0/org.osgi.compendium-1.4.0-sources.jar --slot 0 --keywords "~amd64" --ebuild org-osgi-compendium-1.4.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/org.osgi.compendium-1.4.0.pom --download-uri http://central.maven.org/maven2/org/apache/felix/org.osgi.compendium/1.4.0/org.osgi.compendium-1.4.0-sources.jar --slot 0 --keywords "~amd64" --ebuild org-osgi-compendium-1.4.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,15 +17,15 @@ SRC_URI="http://central.maven.org/maven2/org/apache/felix/org.osgi.compendium/1.
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.felix:org.osgi.compendium:1.4.0"
 
 # Common dependencies
-# POM: ../poms/org.osgi.compendium-1.4.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/org.osgi.compendium-1.4.0.pom
 # org.apache.felix:javax.servlet:1.0.0 -> >=app-maven/javax-servlet-bin-1.0.0:0
 # org.apache.felix:org.osgi.core:1.4.0 -> >=app-maven/org-osgi-core-1.4.0:0
 # org.apache.felix:org.osgi.foundation:1.2.0 -> >=dev-java/osgi-foundation-1.2.0:0
-# POM: ../poms/org.osgi.compendium-1.4.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/org.osgi.compendium-1.4.0.pom
 CDEPEND="
 	>=app-maven/javax-servlet-bin-1.0.0:0
 	>=app-maven/org-osgi-core-1.4.0:0

@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jersey-client-1.9.pom --download-uri http://central.maven.org/maven2/com/sun/jersey/jersey-client/1.9/jersey-client-1.9-sources.jar --slot 0 --keywords "~amd64" --ebuild jersey-client-1.9.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-client-1.9.pom --download-uri http://central.maven.org/maven2/com/sun/jersey/jersey-client/1.9/jersey-client-1.9-sources.jar --slot 0 --keywords "~amd64" --ebuild jersey-client-1.9.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -17,17 +19,17 @@ SRC_URI="http://central.maven.org/maven2/com/sun/jersey/jersey-client/1.9/jersey
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="com.sun.jersey:jersey-client:1.9"
 
 # Common dependencies
-# POM: ../poms/jersey-client-1.9.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-client-1.9.pom
 # com.sun.jersey:jersey-core:1.9 -> >=app-maven/jersey-core-1.9:0
-# POM: ../poms/jersey-client-1.9.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-client-1.9.pom
 CDEPEND="
 	>=app-maven/jersey-core-1.9:0"
 # Compile dependencies
-# POM: ../poms/jersey-client-1.9.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-client-1.9.pom
 # org.osgi:osgi_R4_core:1.0 -> >=app-maven/osgi-bin-1.0:R4_core
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/json4s-core_2.11-3.2.11.pom --download-uri http://central.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11-sources.jar --slot 2.11 --keywords "~amd64" --ebuild json4s-core-3.2.11.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/json4s-core_2.11-3.2.11.pom --download-uri http://central.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11-sources.jar --slot 2.11 --keywords "~amd64" --ebuild json4s-core-3.2.11.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,16 +17,16 @@ SRC_URI="http://central.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json
 LICENSE=""
 SLOT="2.11"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.json4s:json4s-core_2.11:3.2.11"
 
 # Common dependencies
-# POM: ../poms/json4s-core_2.11-3.2.11.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/json4s-core_2.11-3.2.11.pom
 # com.thoughtworks.paranamer:paranamer:2.6 -> >=app-maven/paranamer-2.6:0
 # org.json4s:json4s-ast_2.11:3.2.11 -> >=app-maven/json4s-ast-3.2.11:2.11
 # org.scala-lang:scala-library:2.11.0 -> >=app-maven/scala-library-2.11.7:0
 # org.scala-lang:scalap:2.11.0 -> >=app-maven/scalap-2.11.0:0
-# POM: ../poms/json4s-core_2.11-3.2.11.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/json4s-core_2.11-3.2.11.pom
 CDEPEND="
 	>=app-maven/json4s-ast-3.2.11:2.11
 	>=app-maven/paranamer-2.6:0

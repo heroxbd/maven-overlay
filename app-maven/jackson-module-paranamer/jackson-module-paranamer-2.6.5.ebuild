@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jackson-module-paranamer-2.6.5.pom --download-uri http://central.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.6.5/jackson-module-paranamer-2.6.5-sources.jar --slot 0 --keywords "~amd64" --ebuild jackson-module-paranamer-2.6.5.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jackson-module-paranamer-2.6.5.pom --download-uri http://central.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.6.5/jackson-module-paranamer-2.6.5-sources.jar --slot 0 --keywords "~amd64" --ebuild jackson-module-paranamer-2.6.5.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -16,14 +18,14 @@ SRC_URI="http://central.maven.org/maven2/com/fasterxml/jackson/module/jackson-mo
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="com.fasterxml.jackson.module:jackson-module-paranamer:2.6.5"
 
 # Common dependencies
-# POM: ../poms/jackson-module-paranamer-2.6.5.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jackson-module-paranamer-2.6.5.pom
 # com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.5.1:2
 # com.thoughtworks.paranamer:paranamer:2.6 -> >=app-maven/paranamer-2.6:0
-# POM: ../poms/jackson-module-paranamer-2.6.5.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jackson-module-paranamer-2.6.5.pom
 CDEPEND="
 	>=app-maven/paranamer-2.6:0
 	>=dev-java/jackson-databind-2.5.1:2"

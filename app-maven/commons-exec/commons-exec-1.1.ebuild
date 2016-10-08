@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/commons-exec-1.1.pom --download-uri http://central.maven.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1-sources.jar --slot 0 --keywords "~amd64" --ebuild commons-exec-1.1.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/commons-exec-1.1.pom --download-uri http://central.maven.org/maven2/org/apache/commons/commons-exec/1.1/commons-exec-1.1-sources.jar --slot 0 --keywords "~amd64" --ebuild commons-exec-1.1.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,7 +17,7 @@ SRC_URI="http://central.maven.org/maven2/org/apache/commons/commons-exec/1.1/com
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.commons:commons-exec:1.1"
 
 DEPEND="

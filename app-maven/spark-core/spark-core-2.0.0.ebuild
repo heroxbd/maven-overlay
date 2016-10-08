@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/spark-core_2.11-2.0.0.pom --download-uri http://central.maven.org/maven2/org/apache/spark/spark-core_2.11/2.0.0/spark-core_2.11-2.0.0-sources.jar --slot 2.11 --keywords "~amd64" --ebuild spark-core-2.0.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-core_2.11-2.0.0.pom --download-uri http://central.maven.org/maven2/org/apache/spark/spark-core_2.11/2.0.0/spark-core_2.11-2.0.0-sources.jar --slot 2.11 --keywords "~amd64" --ebuild spark-core-2.0.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -19,11 +21,11 @@ SRC_URI="http://central.maven.org/maven2/org/apache/spark/spark-core_2.11/2.0.0/
 LICENSE=""
 SLOT="2.11"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.spark:spark-core_2.11:2.0.0"
 
 # Common dependencies
-# POM: ../poms/spark-core_2.11-2.0.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-core_2.11-2.0.0.pom
 # com.clearspring.analytics:stream:2.7.0 -> >=app-maven/stream-2.7.0:0
 # com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.5.1:2
 # com.fasterxml.jackson.module:jackson-module-scala_2.11:2.6.5 -> >=app-maven/jackson-module-scala-2.6.5:2.11
@@ -70,9 +72,9 @@ MAVEN_ID="org.apache.spark:spark-core_2.11:2.0.0"
 # org.slf4j:slf4j-api:1.7.16 -> >=dev-java/slf4j-api-1.7.7:0
 # org.slf4j:slf4j-log4j12:1.7.16 -> >=dev-java/slf4j-api-1.7.7:0
 # org.spark-project.spark:unused:1.0.0 -> >=app-maven/unused-1.0.0:0
-# org.xerial.snappy:snappy-java:1.1.2.4 -> >=dev-java/snappy-1.1.0.1:1.1
+# org.xerial.snappy:snappy-java:1.1.2.4 -> >=dev-java/snappy-1.0.3:1.0
 # oro:oro:2.0.8 -> >=app-maven/oro-2.0.8:0
-# POM: ../poms/spark-core_2.11-2.0.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-core_2.11-2.0.0.pom
 CDEPEND="
 	>=app-maven/RoaringBitmap-0.5.11:0
 	>=app-maven/avro-mapred-1.7.7:0
@@ -118,19 +120,19 @@ CDEPEND="
 	>=dev-java/jackson-databind-2.5.1:2
 	>=dev-java/log4j-1.2.17:0
 	>=dev-java/slf4j-api-1.7.7:0
-	>=dev-java/snappy-1.1.0.1:1.1"
+	>=dev-java/snappy-1.0.3:1.0"
 # Compile dependencies
-# POM: ../poms/spark-core_2.11-2.0.0.pom
-# com.google.guava:guava:14.0.1 -> >=dev-java/guava-14.0.1:14
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-core_2.11-2.0.0.pom
+# com.google.guava:guava:14.0.1 -> >=dev-java/guava-07:0
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
 	app-arch/unzip
-	>=dev-java/guava-14.0.1:14"
+	>=dev-java/guava-07:0"
 
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7"
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="stream,jackson-databind-2,jackson-module-scala-2.11,jsr305-bin,compress-lzf,chill-java,chill-2.11,commons-net,metrics-core,metrics-graphite,metrics-json,metrics-jvm,netty,netty-all,javax-servlet-api,log4j,jets3t,lz4,pyrolite,py4j,avro-mapred,commons-lang3,commons-math3,curator-recipes,hadoop-client-bin,ivy,mesos,spark-launcher-2.11,spark-network-common-2.11,spark-network-shuffle-2.11,spark-tags-2.11,spark-unsafe-2.11,xbean-asm5-shaded,jersey-container-servlet,jersey-container-servlet-core,jersey-client,jersey-common,jersey-server,json4s-jackson-2.11,RoaringBitmap,scala-library,slf4j-api,slf4j-api,slf4j-api,slf4j-api,unused,snappy-1.1,oro"
-JAVA_CLASSPATH_EXTRA="guava-14"
+JAVA_GENTOO_CLASSPATH="stream,jackson-databind-2,jackson-module-scala-2.11,jsr305-bin,compress-lzf,chill-java,chill-2.11,commons-net,metrics-core,metrics-graphite,metrics-json,metrics-jvm,netty,netty-all,javax-servlet-api,log4j,jets3t,lz4,pyrolite,py4j,avro-mapred,commons-lang3,commons-math3,curator-recipes,hadoop-client-bin,ivy,mesos,spark-launcher-2.11,spark-network-common-2.11,spark-network-shuffle-2.11,spark-tags-2.11,spark-unsafe-2.11,xbean-asm5-shaded,jersey-container-servlet,jersey-container-servlet-core,jersey-client,jersey-common,jersey-server,json4s-jackson-2.11,RoaringBitmap,scala-library,slf4j-api,slf4j-api,slf4j-api,slf4j-api,unused,snappy-1.0,oro"
+JAVA_CLASSPATH_EXTRA="guava"

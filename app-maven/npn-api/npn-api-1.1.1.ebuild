@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/npn-api-1.1.1.v20141010.pom --download-uri http://central.maven.org/maven2/org/eclipse/jetty/npn/npn-api/1.1.1.v20141010/npn-api-1.1.1.v20141010-sources.jar --slot 0 --keywords "~amd64" --ebuild npn-api-1.1.1.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/npn-api-1.1.1.v20141010.pom --download-uri http://central.maven.org/maven2/org/eclipse/jetty/npn/npn-api/1.1.1.v20141010/npn-api-1.1.1.v20141010-sources.jar --slot 0 --keywords "~amd64" --ebuild npn-api-1.1.1.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,7 +17,7 @@ SRC_URI="http://central.maven.org/maven2/org/eclipse/jetty/npn/npn-api/1.1.1.v20
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.eclipse.jetty.npn:npn-api:1.1.1.v20141010"
 
 DEPEND="

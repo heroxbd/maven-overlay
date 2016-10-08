@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/mesos-0.21.1.pom --download-uri http://central.maven.org/maven2/org/apache/mesos/mesos/0.21.1/mesos-0.21.1-sources.jar --slot 0 --keywords "~amd64" --ebuild mesos-0.21.1.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/mesos-0.21.1.pom --download-uri http://central.maven.org/maven2/org/apache/mesos/mesos/0.21.1/mesos-0.21.1-sources.jar --slot 0 --keywords "~amd64" --ebuild mesos-0.21.1.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/org/apache/mesos/mesos/0.21.1/mesos-0.2
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.mesos:mesos:0.21.1"
 
 # Common dependencies
-# POM: ../poms/mesos-0.21.1.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/mesos-0.21.1.pom
 # com.google.protobuf:protobuf-java:2.5.0 -> >=app-maven/protobuf-java-2.5.0:0
-# POM: ../poms/mesos-0.21.1.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/mesos-0.21.1.pom
 CDEPEND="
 	>=app-maven/protobuf-java-2.5.0:0"
 

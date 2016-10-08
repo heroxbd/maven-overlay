@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/nekohtml-1.9.18.pom --download-uri http://central.maven.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.18/nekohtml-1.9.18-sources.jar --slot 0 --keywords "~amd64" --ebuild nekohtml-1.9.18.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/nekohtml-1.9.18.pom --download-uri http://central.maven.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.18/nekohtml-1.9.18-sources.jar --slot 0 --keywords "~amd64" --ebuild nekohtml-1.9.18.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.1
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="net.sourceforge.nekohtml:nekohtml:1.9.18"
 
 # Common dependencies
-# POM: ../poms/nekohtml-1.9.18.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/nekohtml-1.9.18.pom
 # xerces:xercesImpl:2.10.0 -> >=dev-java/xerces-2.11.0:2
-# POM: ../poms/nekohtml-1.9.18.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/nekohtml-1.9.18.pom
 CDEPEND="
 	>=dev-java/xerces-2.11.0:2"
 

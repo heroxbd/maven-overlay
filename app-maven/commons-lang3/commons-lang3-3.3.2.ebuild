@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/commons-lang3-3.3.2.pom --download-uri http://central.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar --slot 0 --keywords "~amd64" --ebuild commons-lang3-3.3.2.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/commons-lang3-3.3.2.pom --download-uri http://central.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar --slot 0 --keywords "~amd64" --ebuild commons-lang3-3.3.2.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -17,7 +19,7 @@ SRC_URI="http://central.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.commons:commons-lang3:3.3.2"
 
 DEPEND="

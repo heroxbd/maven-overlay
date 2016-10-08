@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/leveldbjni-all-1.8.pom --download-uri http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8-sources.jar --slot 0 --keywords "~amd64" --ebuild leveldbjni-all-1.8.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldbjni-all-1.8.pom --download-uri http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8-sources.jar --slot 0 --keywords "~amd64" --ebuild leveldbjni-all-1.8.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,10 +17,10 @@ SRC_URI="http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-al
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.fusesource.leveldbjni:leveldbjni-all:1.8"
 # Compile dependencies
-# POM: ../poms/leveldbjni-all-1.8.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldbjni-all-1.8.pom
 # org.fusesource.leveldbjni:leveldbjni:1.8 -> >=app-maven/leveldbjni-1.8:0
 # org.fusesource.leveldbjni:leveldbjni-linux32:1.8 -> >=app-maven/leveldbjni-linux32-bin-1.8:0
 # org.fusesource.leveldbjni:leveldbjni-linux64:1.8 -> >=app-maven/leveldbjni-linux64-bin-1.8:0

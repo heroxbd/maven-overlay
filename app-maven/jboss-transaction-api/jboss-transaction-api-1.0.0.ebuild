@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jboss-transaction-api_1.1_spec-1.0.0.Beta1.pom --download-uri http://central.maven.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Beta1/jboss-transaction-api_1.1_spec-1.0.0.Beta1-sources.jar --slot 1.1_spec --keywords "~amd64" --ebuild jboss-transaction-api-1.0.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jboss-transaction-api_1.1_spec-1.0.0.Beta1.pom --download-uri http://central.maven.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.0.Beta1/jboss-transaction-api_1.1_spec-1.0.0.Beta1-sources.jar --slot 1.1_spec --keywords "~amd64" --ebuild jboss-transaction-api-1.0.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,7 +17,7 @@ SRC_URI="http://central.maven.org/maven2/org/jboss/spec/javax/transaction/jboss-
 LICENSE=""
 SLOT="1.1_spec"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.0.Beta1"
 
 DEPEND="

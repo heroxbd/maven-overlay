@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jsp-api-2.1-6.1.14.pom --download-uri http://central.maven.org/maven2/org/mortbay/jetty/jsp-api-2.1/6.1.14/jsp-api-2.1-6.1.14-sources.jar --slot 2.1 --keywords "~amd64" --ebuild jsp-api-6.1.14.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jsp-api-2.1-6.1.14.pom --download-uri http://central.maven.org/maven2/org/mortbay/jetty/jsp-api-2.1/6.1.14/jsp-api-2.1-6.1.14-sources.jar --slot 2.1 --keywords "~amd64" --ebuild jsp-api-6.1.14.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/org/mortbay/jetty/jsp-api-2.1/6.1.14/js
 LICENSE=""
 SLOT="2.1"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.mortbay.jetty:jsp-api-2.1:6.1.14"
 
 # Common dependencies
-# POM: ../poms/jsp-api-2.1-6.1.14.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jsp-api-2.1-6.1.14.pom
 # org.mortbay.jetty:servlet-api-2.5:6.1.14 -> >=app-maven/servlet-api-6.1.14:2.5
-# POM: ../poms/jsp-api-2.1-6.1.14.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jsp-api-2.1-6.1.14.pom
 CDEPEND="
 	>=app-maven/servlet-api-6.1.14:2.5"
 

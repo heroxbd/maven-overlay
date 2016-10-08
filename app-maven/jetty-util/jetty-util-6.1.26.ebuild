@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jetty-util-6.1.26.pom --download-uri http://central.maven.org/maven2/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26-sources.jar --slot 0 --keywords "~amd64" --ebuild jetty-util-6.1.26.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jetty-util-6.1.26.pom --download-uri http://central.maven.org/maven2/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26-sources.jar --slot 0 --keywords "~amd64" --ebuild jetty-util-6.1.26.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,17 +17,17 @@ SRC_URI="http://central.maven.org/maven2/org/mortbay/jetty/jetty-util/6.1.26/jet
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.mortbay.jetty:jetty-util:6.1.26"
 
 # Common dependencies
-# POM: ../poms/jetty-util-6.1.26.pom
-# org.slf4j:slf4j-api:1.3.1 -> >=dev-java/slf4j-api-1.7.7:0
-# POM: ../poms/jetty-util-6.1.26.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jetty-util-6.1.26.pom
+# org.slf4j:slf4j-api:1.3.1 -> >=dev-java/slf4j-nop-1.7.7:0
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jetty-util-6.1.26.pom
 CDEPEND="
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/slf4j-nop-1.7.7:0"
 # Compile dependencies
-# POM: ../poms/jetty-util-6.1.26.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jetty-util-6.1.26.pom
 # org.mortbay.jetty:servlet-api:2.5-20081211 -> >=app-maven/servlet-api-2.5.20081211:0
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -37,5 +39,5 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="slf4j-api"
+JAVA_GENTOO_CLASSPATH="slf4j-nop"
 JAVA_CLASSPATH_EXTRA="servlet-api"

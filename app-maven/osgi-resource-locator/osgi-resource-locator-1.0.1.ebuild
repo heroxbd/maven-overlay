@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/osgi-resource-locator-1.0.1.pom --download-uri http://central.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1-sources.jar --slot 0 --keywords "~amd64" --ebuild osgi-resource-locator-1.0.1.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/osgi-resource-locator-1.0.1.pom --download-uri http://central.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1-sources.jar --slot 0 --keywords "~amd64" --ebuild osgi-resource-locator-1.0.1.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,10 +17,10 @@ SRC_URI="http://central.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.glassfish.hk2:osgi-resource-locator:1.0.1"
 # Compile dependencies
-# POM: ../poms/osgi-resource-locator-1.0.1.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/osgi-resource-locator-1.0.1.pom
 # org.osgi:org.osgi.compendium:4.2.0 -> >=app-maven/org-osgi-compendium-4.2.0:0
 # org.osgi:org.osgi.core:4.2.0 -> >=app-maven/org-osgi-core-4.2.0:0
 DEPEND="

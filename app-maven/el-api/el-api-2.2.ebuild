@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/el-api-2.2.pom --download-uri http://central.maven.org/maven2/javax/el/el-api/2.2/el-api-2.2-sources.jar --slot 0 --keywords "~amd64" --ebuild el-api-2.2.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/el-api-2.2.pom --download-uri http://central.maven.org/maven2/javax/el/el-api/2.2/el-api-2.2-sources.jar --slot 0 --keywords "~amd64" --ebuild el-api-2.2.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,7 +17,7 @@ SRC_URI="http://central.maven.org/maven2/javax/el/el-api/2.2/el-api-2.2-sources.
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="javax.el:el-api:2.2"
 
 DEPEND="

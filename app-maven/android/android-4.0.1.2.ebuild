@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/android-4.0.1.2.pom --download-uri http://central.maven.org/maven2/com/google/android/android/4.0.1.2/android-4.0.1.2-sources.jar --slot 0 --keywords "~amd64" --ebuild android-4.0.1.2.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/android-4.0.1.2.pom --download-uri http://central.maven.org/maven2/com/google/android/android/4.0.1.2/android-4.0.1.2-sources.jar --slot 0 --keywords "~amd64" --ebuild android-4.0.1.2.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,18 +17,18 @@ SRC_URI="http://central.maven.org/maven2/com/google/android/android/4.0.1.2/andr
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="com.google.android:android:4.0.1.2"
 
 # Common dependencies
-# POM: ../poms/android-4.0.1.2.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/android-4.0.1.2.pom
 # commons-logging:commons-logging:1.1.1 -> >=dev-java/commons-logging-1.2:0
 # org.apache.httpcomponents:httpclient:4.0.1 -> >=dev-java/httpcomponents-client-4.5:4.5
 # org.json:json:20080701 -> >=dev-java/json-20150729:0
 # org.khronos:opengl-api:2.1.1 -> >=app-maven/opengl-api-2.1.1:0
 # xerces:xmlParserAPIs:2.6.2 -> >=dev-java/xerces-2.11.0:2
 # xpp3:xpp3:1.1.4c -> >=app-maven/xpp3-1.1.4c:0
-# POM: ../poms/android-4.0.1.2.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/android-4.0.1.2.pom
 CDEPEND="
 	>=app-maven/opengl-api-2.1.1:0
 	>=app-maven/xpp3-1.1.4c:0

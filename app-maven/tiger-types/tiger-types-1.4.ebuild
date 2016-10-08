@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/tiger-types-1.4.pom --download-uri http://central.maven.org/maven2/org/jvnet/tiger-types/1.4/tiger-types-1.4-sources.jar --slot 0 --keywords "~amd64" --ebuild tiger-types-1.4.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/tiger-types-1.4.pom --download-uri http://central.maven.org/maven2/org/jvnet/tiger-types/1.4/tiger-types-1.4-sources.jar --slot 0 --keywords "~amd64" --ebuild tiger-types-1.4.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,7 +17,7 @@ SRC_URI="http://central.maven.org/maven2/org/jvnet/tiger-types/1.4/tiger-types-1
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.jvnet:tiger-types:1.4"
 
 DEPEND="

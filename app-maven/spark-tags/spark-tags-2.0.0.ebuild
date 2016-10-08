@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/spark-tags_2.11-2.0.0.pom --download-uri http://central.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.0.0/spark-tags_2.11-2.0.0-sources.jar --slot 2.11 --keywords "~amd64" --ebuild spark-tags-2.0.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-tags_2.11-2.0.0.pom --download-uri http://central.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.0.0/spark-tags_2.11-2.0.0-sources.jar --slot 2.11 --keywords "~amd64" --ebuild spark-tags-2.0.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -19,14 +21,14 @@ SRC_URI="http://central.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.0.0/
 LICENSE=""
 SLOT="2.11"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.spark:spark-tags_2.11:2.0.0"
 
 # Common dependencies
-# POM: ../poms/spark-tags_2.11-2.0.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-tags_2.11-2.0.0.pom
 # org.scalatest:scalatest_2.11:2.2.6 -> >=app-maven/scalatest-2.2.6:2.11
 # org.spark-project.spark:unused:1.0.0 -> >=app-maven/unused-1.0.0:0
-# POM: ../poms/spark-tags_2.11-2.0.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-tags_2.11-2.0.0.pom
 CDEPEND="
 	>=app-maven/scalatest-2.2.6:2.11
 	>=app-maven/unused-1.0.0:0"

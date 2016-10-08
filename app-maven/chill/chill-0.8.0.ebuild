@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/chill_2.11-0.8.0.pom --download-uri http://central.maven.org/maven2/com/twitter/chill_2.11/0.8.0/chill_2.11-0.8.0-sources.jar --slot 2.11 --keywords "~amd64" --ebuild chill-0.8.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/chill_2.11-0.8.0.pom --download-uri http://central.maven.org/maven2/com/twitter/chill_2.11/0.8.0/chill_2.11-0.8.0-sources.jar --slot 2.11 --keywords "~amd64" --ebuild chill-0.8.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,15 +17,15 @@ SRC_URI="http://central.maven.org/maven2/com/twitter/chill_2.11/0.8.0/chill_2.11
 LICENSE=""
 SLOT="2.11"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="com.twitter:chill_2.11:0.8.0"
 
 # Common dependencies
-# POM: ../poms/chill_2.11-0.8.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/chill_2.11-0.8.0.pom
 # com.esotericsoftware:kryo-shaded:3.0.3 -> >=app-maven/kryo-shaded-3.0.3:0
 # com.twitter:chill-java:0.8.0 -> >=app-maven/chill-java-0.8.0:0
 # org.scala-lang:scala-library:2.11.7 -> >=app-maven/scala-library-2.11.7:0
-# POM: ../poms/chill_2.11-0.8.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/chill_2.11-0.8.0.pom
 CDEPEND="
 	>=app-maven/chill-java-0.8.0:0
 	>=app-maven/kryo-shaded-3.0.3:0

@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jets3t-0.7.1.pom --download-uri http://central.maven.org/maven2/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1-sources.jar --slot 0 --keywords "~amd64" --ebuild jets3t-0.7.1.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jets3t-0.7.1.pom --download-uri http://central.maven.org/maven2/net/java/dev/jets3t/jets3t/0.7.1/jets3t-0.7.1-sources.jar --slot 0 --keywords "~amd64" --ebuild jets3t-0.7.1.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,15 +17,15 @@ SRC_URI="http://central.maven.org/maven2/net/java/dev/jets3t/jets3t/0.7.1/jets3t
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="net.java.dev.jets3t:jets3t:0.7.1"
 
 # Common dependencies
-# POM: ../poms/jets3t-0.7.1.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jets3t-0.7.1.pom
 # commons-codec:commons-codec:1.3 -> >=dev-java/commons-codec-1.7:0
 # commons-httpclient:commons-httpclient:3.1 -> >=dev-java/commons-httpclient-3.1:3
 # commons-logging:commons-logging:1.1.1 -> >=dev-java/commons-logging-1.2:0
-# POM: ../poms/jets3t-0.7.1.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jets3t-0.7.1.pom
 CDEPEND="
 	>=dev-java/commons-codec-1.7:0
 	>=dev-java/commons-httpclient-3.1:3

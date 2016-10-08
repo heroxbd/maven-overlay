@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jboss-logging-spi-2.1.2.GA.pom --download-uri http://central.maven.org/maven2/org/jboss/logging/jboss-logging-spi/2.1.2.GA/jboss-logging-spi-2.1.2.GA-sources.jar --slot 0 --keywords "~amd64" --ebuild jboss-logging-spi-2.1.2.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jboss-logging-spi-2.1.2.GA.pom --download-uri http://central.maven.org/maven2/org/jboss/logging/jboss-logging-spi/2.1.2.GA/jboss-logging-spi-2.1.2.GA-sources.jar --slot 0 --keywords "~amd64" --ebuild jboss-logging-spi-2.1.2.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,7 +17,7 @@ SRC_URI="http://central.maven.org/maven2/org/jboss/logging/jboss-logging-spi/2.1
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.jboss.logging:jboss-logging-spi:2.1.2.GA"
 
 DEPEND="

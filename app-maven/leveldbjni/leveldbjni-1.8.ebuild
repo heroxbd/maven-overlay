@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/leveldbjni-1.8.pom --download-uri http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni/1.8/leveldbjni-1.8-sources.jar --slot 0 --keywords "~amd64" --ebuild leveldbjni-1.8.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldbjni-1.8.pom --download-uri http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni/1.8/leveldbjni-1.8-sources.jar --slot 0 --keywords "~amd64" --ebuild leveldbjni-1.8.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,17 +17,17 @@ SRC_URI="http://central.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni/1.
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.fusesource.leveldbjni:leveldbjni:1.8"
 
 # Common dependencies
-# POM: ../poms/leveldbjni-1.8.pom
-# org.fusesource.hawtjni:hawtjni-runtime:1.9 -> >=dev-java/hawtjni-runtime-1.10:0
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldbjni-1.8.pom
+# org.fusesource.hawtjni:hawtjni-runtime:1.9 -> >=dev-java/maven-hawtjni-plugin-1.11:0
 # org.iq80.leveldb:leveldb-api:0.6 -> >=app-maven/leveldb-api-0.6:0
-# POM: ../poms/leveldbjni-1.8.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldbjni-1.8.pom
 CDEPEND="
 	>=app-maven/leveldb-api-0.6:0
-	>=dev-java/hawtjni-runtime-1.10:0"
+	>=dev-java/maven-hawtjni-plugin-1.11:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -36,4 +38,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="hawtjni-runtime,leveldb-api"
+JAVA_GENTOO_CLASSPATH="maven-hawtjni-plugin,leveldb-api"

@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jaxb-impl-2.2.3-1.pom --download-uri http://central.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1-sources.jar --slot 0 --keywords "~amd64" --ebuild jaxb-impl-2.2.3.1.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jaxb-impl-2.2.3-1.pom --download-uri http://central.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1-sources.jar --slot 0 --keywords "~amd64" --ebuild jaxb-impl-2.2.3.1.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="com.sun.xml.bind:jaxb-impl:2.2.3-1"
 
 # Common dependencies
-# POM: ../poms/jaxb-impl-2.2.3-1.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jaxb-impl-2.2.3-1.pom
 # javax.xml.bind:jaxb-api:2.2.2 -> >=app-maven/jaxb-api-2.1:0
-# POM: ../poms/jaxb-impl-2.2.3-1.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jaxb-impl-2.2.3-1.pom
 CDEPEND="
 	>=app-maven/jaxb-api-2.1:0"
 

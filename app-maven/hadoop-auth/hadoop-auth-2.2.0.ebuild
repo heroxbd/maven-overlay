@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/hadoop-auth-2.2.0.pom --download-uri http://central.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0-sources.jar --slot 0 --keywords "~amd64" --ebuild hadoop-auth-2.2.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom --download-uri http://central.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0-sources.jar --slot 0 --keywords "~amd64" --ebuild hadoop-auth-2.2.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,19 +17,19 @@ SRC_URI="http://central.maven.org/maven2/org/apache/hadoop/hadoop-auth/2.2.0/had
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.hadoop:hadoop-auth:2.2.0"
 
 # Common dependencies
-# POM: ../poms/hadoop-auth-2.2.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom
 # commons-codec:commons-codec:1.4 -> >=dev-java/commons-codec-1.7:0
 # org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
-# POM: ../poms/hadoop-auth-2.2.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom
 CDEPEND="
 	>=dev-java/commons-codec-1.7:0
 	>=dev-java/slf4j-api-1.7.7:0"
 # Compile dependencies
-# POM: ../poms/hadoop-auth-2.2.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom
 # javax.servlet:servlet-api:2.5 -> >=app-maven/servlet-api-2.5:0
 # org.apache.hadoop:hadoop-annotations:2.2.0 -> >=app-maven/hadoop-annotations-2.2.0:0
 DEPEND="${CDEPEND}
@@ -36,7 +38,7 @@ DEPEND="${CDEPEND}
 	>=app-maven/hadoop-annotations-2.2.0:0
 	>=app-maven/servlet-api-2.5:0"
 # Runtime dependencies
-# POM: ../poms/hadoop-auth-2.2.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom
 # log4j:log4j:1.2.17 -> >=dev-java/log4j-1.2.17:0
 # org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
 RDEPEND="${CDEPEND}

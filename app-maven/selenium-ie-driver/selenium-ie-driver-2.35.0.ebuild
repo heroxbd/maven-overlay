@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/selenium-ie-driver-2.35.0.pom --download-uri http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/2.35.0/selenium-ie-driver-2.35.0-sources.jar --slot 0 --keywords "~amd64" --ebuild selenium-ie-driver-2.35.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-ie-driver-2.35.0.pom --download-uri http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/2.35.0/selenium-ie-driver-2.35.0-sources.jar --slot 0 --keywords "~amd64" --ebuild selenium-ie-driver-2.35.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,15 +17,15 @@ SRC_URI="http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-dri
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.seleniumhq.selenium:selenium-ie-driver:2.35.0"
 
 # Common dependencies
-# POM: ../poms/selenium-ie-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-ie-driver-2.35.0.pom
 # net.java.dev.jna:jna:3.4.0 -> >=app-maven/jna-3.4.0:0
 # net.java.dev.jna:platform:3.4.0 -> >=app-maven/platform-3.4.0:0
 # org.seleniumhq.selenium:selenium-remote-driver:2.35.0 -> >=app-maven/selenium-remote-driver-2.35.0:0
-# POM: ../poms/selenium-ie-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-ie-driver-2.35.0.pom
 CDEPEND="
 	>=app-maven/jna-3.4.0:0
 	>=app-maven/platform-3.4.0:0

@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/hadoop-core-0.20.205.0.pom --download-uri http://central.maven.org/maven2/org/apache/hadoop/hadoop-core/0.20.205.0/hadoop-core-0.20.205.0.jar --slot 0 --keywords "~amd64" --ebuild hadoop-core-bin-0.20.205.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-core-0.20.205.0.pom --download-uri http://central.maven.org/maven2/org/apache/hadoop/hadoop-core/0.20.205.0/hadoop-core-0.20.205.0.jar --slot 0 --keywords "~amd64" --ebuild hadoop-core-bin-0.20.205.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-binjar
 
@@ -15,11 +17,11 @@ SRC_URI="http://central.maven.org/maven2/org/apache/hadoop/hadoop-core/0.20.205.
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.hadoop:hadoop-core:0.20.205.0"
 
 # Common dependencies
-# POM: ../poms/hadoop-core-0.20.205.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-core-0.20.205.0.pom
 # commons-cli:commons-cli:1.2 -> >=dev-java/commons-cli-1.2:1
 # commons-codec:commons-codec:1.4 -> >=dev-java/commons-codec-1.7:0
 # commons-configuration:commons-configuration:1.6 -> >=dev-java/commons-configuration-1.6:0
@@ -39,7 +41,7 @@ MAVEN_ID="org.apache.hadoop:hadoop-core:0.20.205.0"
 # tomcat:jasper-compiler:5.5.12 -> >=app-maven/jasper-compiler-bin-5.5.12:0
 # tomcat:jasper-runtime:5.5.12 -> >=app-maven/jasper-runtime-bin-5.5.12:0
 # xmlenc:xmlenc:0.52 -> >=app-maven/xmlenc-bin-0.52:0
-# POM: ../poms/hadoop-core-0.20.205.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-core-0.20.205.0.pom
 CDEPEND="
 	>=app-maven/commons-math-2.1:0
 	>=app-maven/core-bin-3.1.1:0

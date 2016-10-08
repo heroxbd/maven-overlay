@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/hk2-utils-2.4.0-b34.pom --download-uri http://central.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34-sources.jar --slot 0 --keywords "~amd64" --ebuild hk2-utils-2.4.0_beta34.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hk2-utils-2.4.0-b34.pom --download-uri http://central.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34-sources.jar --slot 0 --keywords "~amd64" --ebuild hk2-utils-2.4.0_beta34.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b34/h
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.glassfish.hk2:hk2-utils:2.4.0-b34"
 
 # Common dependencies
-# POM: ../poms/hk2-utils-2.4.0-b34.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hk2-utils-2.4.0-b34.pom
 # javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
-# POM: ../poms/hk2-utils-2.4.0-b34.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hk2-utils-2.4.0-b34.pom
 CDEPEND="
 	>=dev-java/javax-inject-1:0"
 

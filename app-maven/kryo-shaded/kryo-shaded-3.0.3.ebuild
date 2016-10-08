@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/kryo-shaded-3.0.3.pom --download-uri http://central.maven.org/maven2/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3-sources.jar --slot 0 --keywords "~amd64" --ebuild kryo-shaded-3.0.3.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/kryo-shaded-3.0.3.pom --download-uri http://central.maven.org/maven2/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3-sources.jar --slot 0 --keywords "~amd64" --ebuild kryo-shaded-3.0.3.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,14 +17,14 @@ SRC_URI="http://central.maven.org/maven2/com/esotericsoftware/kryo-shaded/3.0.3/
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="com.esotericsoftware:kryo-shaded:3.0.3"
 
 # Common dependencies
-# POM: ../poms/kryo-shaded-3.0.3.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/kryo-shaded-3.0.3.pom
 # com.esotericsoftware:minlog:1.3.0 -> >=app-maven/minlog-1.3.0:0
 # org.objenesis:objenesis:2.1 -> >=app-maven/objenesis-2.1:0
-# POM: ../poms/kryo-shaded-3.0.3.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/kryo-shaded-3.0.3.pom
 CDEPEND="
 	>=app-maven/minlog-1.3.0:0
 	>=app-maven/objenesis-2.1:0"

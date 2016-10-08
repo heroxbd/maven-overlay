@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/paranamer-2.6.pom --download-uri http://central.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6-sources.jar --slot 0 --keywords "~amd64" --ebuild paranamer-2.6.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/paranamer-2.6.pom --download-uri http://central.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6-sources.jar --slot 0 --keywords "~amd64" --ebuild paranamer-2.6.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="com.thoughtworks.paranamer:paranamer:2.6"
 
 # Common dependencies
-# POM: ../poms/paranamer-2.6.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/paranamer-2.6.pom
 # javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
-# POM: ../poms/paranamer-2.6.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/paranamer-2.6.pom
 CDEPEND="
 	>=dev-java/javax-inject-1:0"
 

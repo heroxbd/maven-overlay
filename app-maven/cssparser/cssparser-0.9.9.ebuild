@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/cssparser-0.9.9.pom --download-uri http://central.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.9/cssparser-0.9.9-sources.jar --slot 0 --keywords "~amd64" --ebuild cssparser-0.9.9.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/cssparser-0.9.9.pom --download-uri http://central.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.9/cssparser-0.9.9-sources.jar --slot 0 --keywords "~amd64" --ebuild cssparser-0.9.9.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,13 +17,13 @@ SRC_URI="http://central.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="net.sourceforge.cssparser:cssparser:0.9.9"
 
 # Common dependencies
-# POM: ../poms/cssparser-0.9.9.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/cssparser-0.9.9.pom
 # org.w3c.css:sac:1.3 -> >=app-maven/sac-1.3:0
-# POM: ../poms/cssparser-0.9.9.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/cssparser-0.9.9.pom
 CDEPEND="
 	>=app-maven/sac-1.3:0"
 

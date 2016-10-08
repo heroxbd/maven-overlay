@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/org.osgi.core-1.4.0.pom --download-uri http://central.maven.org/maven2/org/apache/felix/org.osgi.core/1.4.0/org.osgi.core-1.4.0-sources.jar --slot 0 --keywords "~amd64" --ebuild org-osgi-core-1.4.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/org.osgi.core-1.4.0.pom --download-uri http://central.maven.org/maven2/org/apache/felix/org.osgi.core/1.4.0/org.osgi.core-1.4.0-sources.jar --slot 0 --keywords "~amd64" --ebuild org-osgi-core-1.4.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,7 +17,7 @@ SRC_URI="http://central.maven.org/maven2/org/apache/felix/org.osgi.core/1.4.0/or
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.felix:org.osgi.core:1.4.0"
 
 DEPEND="

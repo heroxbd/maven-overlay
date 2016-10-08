@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/scalacheck_2.11-1.12.5.pom --download-uri http://central.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.12.5/scalacheck_2.11-1.12.5-sources.jar --slot 2.11 --keywords "~amd64" --ebuild scalacheck-1.12.5.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/scalacheck_2.11-1.12.5.pom --download-uri http://central.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.12.5/scalacheck_2.11-1.12.5-sources.jar --slot 2.11 --keywords "~amd64" --ebuild scalacheck-1.12.5.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,14 +17,14 @@ SRC_URI="http://central.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.12.5/s
 LICENSE=""
 SLOT="2.11"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.scalacheck:scalacheck_2.11:1.12.5"
 
 # Common dependencies
-# POM: ../poms/scalacheck_2.11-1.12.5.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/scalacheck_2.11-1.12.5.pom
 # org.scala-lang:scala-library:2.11.7 -> >=app-maven/scala-library-2.11.7:0
 # org.scala-sbt:test-interface:1.0 -> >=app-maven/test-interface-1.0:0
-# POM: ../poms/scalacheck_2.11-1.12.5.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/scalacheck_2.11-1.12.5.pom
 CDEPEND="
 	>=app-maven/scala-library-2.11.7:0
 	>=app-maven/test-interface-1.0:0"

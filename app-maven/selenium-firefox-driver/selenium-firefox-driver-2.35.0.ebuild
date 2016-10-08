@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/selenium-firefox-driver-2.35.0.pom --download-uri http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/2.35.0/selenium-firefox-driver-2.35.0-sources.jar --slot 0 --keywords "~amd64" --ebuild selenium-firefox-driver-2.35.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-firefox-driver-2.35.0.pom --download-uri http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/2.35.0/selenium-firefox-driver-2.35.0-sources.jar --slot 0 --keywords "~amd64" --ebuild selenium-firefox-driver-2.35.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,15 +17,15 @@ SRC_URI="http://central.maven.org/maven2/org/seleniumhq/selenium/selenium-firefo
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.seleniumhq.selenium:selenium-firefox-driver:2.35.0"
 
 # Common dependencies
-# POM: ../poms/selenium-firefox-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-firefox-driver-2.35.0.pom
 # commons-io:commons-io:2.2 -> >=dev-java/commons-io-2.4:1
 # org.apache.commons:commons-exec:1.1 -> >=app-maven/commons-exec-1.1:0
 # org.seleniumhq.selenium:selenium-remote-driver:2.35.0 -> >=app-maven/selenium-remote-driver-2.35.0:0
-# POM: ../poms/selenium-firefox-driver-2.35.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-firefox-driver-2.35.0.pom
 CDEPEND="
 	>=app-maven/commons-exec-1.1:0
 	>=app-maven/selenium-remote-driver-2.35.0:0

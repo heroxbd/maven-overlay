@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/weld-api-1.1.Final.pom --download-uri http://central.maven.org/maven2/org/jboss/weld/weld-api/1.1.Final/weld-api-1.1.Final-sources.jar --slot 0 --keywords "~amd64" --ebuild weld-api-1.1.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/weld-api-1.1.Final.pom --download-uri http://central.maven.org/maven2/org/jboss/weld/weld-api/1.1.Final/weld-api-1.1.Final-sources.jar --slot 0 --keywords "~amd64" --ebuild weld-api-1.1.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,16 +17,16 @@ SRC_URI="http://central.maven.org/maven2/org/jboss/weld/weld-api/1.1.Final/weld-
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.jboss.weld:weld-api:1.1.Final"
 
 # Common dependencies
-# POM: ../poms/weld-api-1.1.Final.pom
-# javax.enterprise:cdi-api:1.0-SP3 -> >=app-maven/cdi-api-1.0_p4:0
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/weld-api-1.1.Final.pom
+# javax.enterprise:cdi-api:1.0-SP3 -> >=app-maven/cdi-api-1.0:0
 # javax.servlet:servlet-api:2.5 -> >=app-maven/servlet-api-2.5:0
-# POM: ../poms/weld-api-1.1.Final.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/weld-api-1.1.Final.pom
 CDEPEND="
-	>=app-maven/cdi-api-1.0_p4:0
+	>=app-maven/cdi-api-1.0:0
 	>=app-maven/servlet-api-2.5:0"
 
 DEPEND="${CDEPEND}

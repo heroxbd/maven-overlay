@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/hk2-locator-2.4.0-b34.pom --download-uri http://central.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34-sources.jar --slot 0 --keywords "~amd64" --ebuild hk2-locator-2.4.0_beta34.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hk2-locator-2.4.0-b34.pom --download-uri http://central.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34-sources.jar --slot 0 --keywords "~amd64" --ebuild hk2-locator-2.4.0_beta34.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,23 +17,23 @@ SRC_URI="http://central.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b34
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.glassfish.hk2:hk2-locator:2.4.0-b34"
 
 # Common dependencies
-# POM: ../poms/hk2-locator-2.4.0-b34.pom
-# org.glassfish.hk2:hk2-api:2.4.0-b34 -> >=app-maven/hk2-api-2.4.0_beta34:0
-# org.glassfish.hk2:hk2-utils:2.4.0-b34 -> >=app-maven/hk2-utils-2.4.0_beta34:0
-# org.glassfish.hk2.external:aopalliance-repackaged:2.4.0-b34 -> >=app-maven/aopalliance-repackaged-2.4.0_beta34:0
-# org.glassfish.hk2.external:javax.inject:2.4.0-b34 -> >=app-maven/javax-inject-2.4.0_beta34:0
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hk2-locator-2.4.0-b34.pom
+# org.glassfish.hk2:hk2-api:2.4.0-b34 -> >=app-maven/hk2-api-2.4.0:0
+# org.glassfish.hk2:hk2-utils:2.4.0-b34 -> >=app-maven/hk2-utils-2.4.0:0
+# org.glassfish.hk2.external:aopalliance-repackaged:2.4.0-b34 -> >=app-maven/aopalliance-repackaged-2.4.0:0
+# org.glassfish.hk2.external:javax.inject:2.4.0-b34 -> >=app-maven/javax-inject-2.4.0:0
 # org.javassist:javassist:3.18.1-GA -> >=dev-java/javassist-3.18.2:3
 # org.jvnet:tiger-types:1.4 -> >=app-maven/tiger-types-1.4:0
-# POM: ../poms/hk2-locator-2.4.0-b34.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hk2-locator-2.4.0-b34.pom
 CDEPEND="
-	>=app-maven/aopalliance-repackaged-2.4.0_beta34:0
-	>=app-maven/hk2-api-2.4.0_beta34:0
-	>=app-maven/hk2-utils-2.4.0_beta34:0
-	>=app-maven/javax-inject-2.4.0_beta34:0
+	>=app-maven/aopalliance-repackaged-2.4.0:0
+	>=app-maven/hk2-api-2.4.0:0
+	>=app-maven/hk2-utils-2.4.0:0
+	>=app-maven/javax-inject-2.4.0:0
 	>=app-maven/tiger-types-1.4:0
 	>=dev-java/javassist-3.18.2:3"
 

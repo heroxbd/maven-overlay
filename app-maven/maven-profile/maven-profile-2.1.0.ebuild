@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/maven-profile-2.1.0.pom --download-uri http://central.maven.org/maven2/org/apache/maven/maven-profile/2.1.0/maven-profile-2.1.0-sources.jar --slot 0 --keywords "~amd64" --ebuild maven-profile-2.1.0.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/maven-profile-2.1.0.pom --download-uri http://central.maven.org/maven2/org/apache/maven/maven-profile/2.1.0/maven-profile-2.1.0-sources.jar --slot 0 --keywords "~amd64" --ebuild maven-profile-2.1.0.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,18 +17,18 @@ SRC_URI="http://central.maven.org/maven2/org/apache/maven/maven-profile/2.1.0/ma
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.apache.maven:maven-profile:2.1.0"
 
 # Common dependencies
-# POM: ../poms/maven-profile-2.1.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/maven-profile-2.1.0.pom
 # org.apache.maven:maven-model:2.1.0 -> >=app-maven/maven-model-2.1.0:0
-# org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1 -> >=app-maven/plexus-container-default-1.0_alpha9:0
+# org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1 -> >=app-maven/plexus-container-default-1.0:0
 # org.codehaus.plexus:plexus-utils:1.5.6 -> >=app-maven/plexus-utils-1.5.6:0
-# POM: ../poms/maven-profile-2.1.0.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/maven-profile-2.1.0.pom
 CDEPEND="
 	>=app-maven/maven-model-2.1.0:0
-	>=app-maven/plexus-container-default-1.0_alpha9:0
+	>=app-maven/plexus-container-default-1.0:0
 	>=app-maven/plexus-utils-1.5.6:0"
 
 DEPEND="${CDEPEND}

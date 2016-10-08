@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/leveldb-api-0.6.pom --download-uri http://central.maven.org/maven2/org/iq80/leveldb/leveldb-api/0.6/leveldb-api-0.6-sources.jar --slot 0 --keywords "~amd64" --ebuild leveldb-api-0.6.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/leveldb-api-0.6.pom --download-uri http://central.maven.org/maven2/org/iq80/leveldb/leveldb-api/0.6/leveldb-api-0.6-sources.jar --slot 0 --keywords "~amd64" --ebuild leveldb-api-0.6.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -15,7 +17,7 @@ SRC_URI="http://central.maven.org/maven2/org/iq80/leveldb/leveldb-api/0.6/leveld
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="org.iq80.leveldb:leveldb-api:0.6"
 
 DEPEND="

@@ -3,9 +3,11 @@
 # $Id$
 
 # Skeleton command:
-# java-ebuilder --generate-ebuild --workdir . --pom ../poms/jersey-json-1.9.pom --download-uri http://central.maven.org/maven2/com/sun/jersey/jersey-json/1.9/jersey-json-1.9-sources.jar --slot 0 --keywords "~amd64" --ebuild jersey-json-1.9.ebuild
+# java-ebuilder --generate-ebuild --workdir . --pom /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-json-1.9.pom --download-uri http://central.maven.org/maven2/com/sun/jersey/jersey-json/1.9/jersey-json-1.9-sources.jar --slot 0 --keywords "~amd64" --ebuild jersey-json-1.9.ebuild
 
 EAPI=5
+
+IUSE="doc source"
 
 inherit java-pkg-2 java-pkg-simple
 
@@ -17,11 +19,11 @@ SRC_URI="http://central.maven.org/maven2/com/sun/jersey/jersey-json/1.9/jersey-j
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="doc source"
+IUSE=""
 MAVEN_ID="com.sun.jersey:jersey-json:1.9"
 
 # Common dependencies
-# POM: ../poms/jersey-json-1.9.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-json-1.9.pom
 # com.sun.jersey:jersey-core:1.9 -> >=app-maven/jersey-core-1.9:0
 # com.sun.xml.bind:jaxb-impl:2.2.3-1 -> >=app-maven/jaxb-impl-2.2.3.1:0
 # org.codehaus.jackson:jackson-core-asl:1.8.3 -> >=app-maven/jackson-core-asl-1.9.13:0
@@ -29,7 +31,7 @@ MAVEN_ID="com.sun.jersey:jersey-json:1.9"
 # org.codehaus.jackson:jackson-mapper-asl:1.8.3 -> >=app-maven/jackson-mapper-asl-1.9.13:0
 # org.codehaus.jackson:jackson-xc:1.8.3 -> >=app-maven/jackson-xc-1.8.3:0
 # org.codehaus.jettison:jettison:1.1 -> >=dev-java/jettison-1.3.7:0
-# POM: ../poms/jersey-json-1.9.pom
+# POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-json-1.9.pom
 CDEPEND="
 	>=app-maven/jackson-core-asl-1.9.13:0
 	>=app-maven/jackson-jaxrs-1.8.3:0
