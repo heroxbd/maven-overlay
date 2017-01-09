@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,10 +22,10 @@ MAVEN_ID="org.scala-lang:scalap:2.11.0"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/scalap-2.11.0.pom
-# org.scala-lang:scala-compiler:2.11.0 -> >=app-maven/scala-compiler-2.11.7:0
+# org.scala-lang:scala-compiler:2.11.0 -> >=dev-lang/scala-2.9.3:2.9
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/scalap-2.11.0.pom
 CDEPEND="
-	>=app-maven/scala-compiler-2.11.7:0"
+	>=dev-lang/scala-2.9.3:2.9"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -36,4 +36,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="scala-compiler"
+JAVA_GENTOO_CLASSPATH="scala-2.9"

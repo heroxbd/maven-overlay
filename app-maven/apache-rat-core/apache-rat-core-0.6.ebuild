@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -23,12 +23,12 @@ MAVEN_ID="org.apache.rat:apache-rat-core:0.6"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/apache-rat-core-0.6.pom
-# commons-cli:commons-cli:1.1 -> >=dev-java/commons-cli-1.2:1
+# commons-cli:commons-cli:1.1 -> >=dev-java/commons-cli-1.3.1:1
 # commons-collections:commons-collections:3.2 -> >=dev-java/commons-collections-3.2.1:0
 # commons-lang:commons-lang:2.1 -> >=dev-java/commons-lang-2.0:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/apache-rat-core-0.6.pom
 CDEPEND="
-	>=dev-java/commons-cli-1.2:1
+	>=dev-java/commons-cli-1.3.1:1
 	>=dev-java/commons-collections-3.2.1:0
 	>=dev-java/commons-lang-2.0:0"
 

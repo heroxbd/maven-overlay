@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -24,12 +24,12 @@ MAVEN_ID="io.netty:netty-transport-native-epoll:4.0.29.Final"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/netty-transport-native-epoll-4.0.29.Final.pom
-# io.netty:netty-buffer:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-common:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-transport:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
+# io.netty:netty-buffer:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-common:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-transport:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/netty-transport-native-epoll-4.0.29.Final.pom
 CDEPEND="
-	>=dev-java/netty-buffer-4.0.36:0"
+	>=dev-java/netty-transport-4.0.36:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -40,4 +40,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="netty-buffer,netty-buffer,netty-buffer"
+JAVA_GENTOO_CLASSPATH="netty-transport,netty-transport,netty-transport"

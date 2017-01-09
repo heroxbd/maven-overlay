@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,7 +22,7 @@ MAVEN_ID="org.apache.hadoop:hadoop-mapreduce-client-common:2.2.0"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-mapreduce-client-common-2.2.0.pom
-# com.google.inject.extensions:guice-servlet:3.0 -> >=dev-java/guice-4.0:4
+# com.google.inject.extensions:guice-servlet:3.0 -> >=dev-java/guice-4.1:4
 # com.google.protobuf:protobuf-java:2.5.0 -> >=app-maven/protobuf-java-2.5.0:0
 # io.netty:netty:3.6.2.Final -> >=app-maven/netty-3.8.0:0
 # org.apache.avro:avro:1.7.4 -> >=app-maven/avro-1.7.7:0
@@ -31,8 +31,8 @@ MAVEN_ID="org.apache.hadoop:hadoop-mapreduce-client-common:2.2.0"
 # org.apache.hadoop:hadoop-yarn-client:2.2.0 -> >=app-maven/hadoop-yarn-client-2.2.0:0
 # org.apache.hadoop:hadoop-yarn-common:2.2.0 -> >=app-maven/hadoop-yarn-common-2.2.0:0
 # org.apache.hadoop:hadoop-yarn-server-common:2.2.0 -> >=app-maven/hadoop-yarn-server-common-2.2.0:0
-# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
-# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
+# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-mapreduce-client-common-2.2.0.pom
 CDEPEND="
 	>=app-maven/avro-1.7.7:0
@@ -43,11 +43,11 @@ CDEPEND="
 	>=app-maven/hadoop-yarn-server-common-2.2.0:0
 	>=app-maven/netty-3.8.0:0
 	>=app-maven/protobuf-java-2.5.0:0
-	>=dev-java/guice-4.0:4
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/guice-4.1:4
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-mapreduce-client-common-2.2.0.pom
-# com.google.guava:guava:11.0.2 -> >=dev-java/guava-07:0
+# com.google.guava:guava:11.0.2 -> >=dev-java/guava-10.0.1:10
 # commons-cli:commons-cli:1.2 -> >=dev-java/commons-cli-1.2:1
 # commons-codec:commons-codec:1.4 -> >=dev-java/commons-codec-1.7:0
 # commons-lang:commons-lang:2.5 -> >=dev-java/commons-lang-2.0:0
@@ -61,12 +61,12 @@ DEPEND="${CDEPEND}
 	>=dev-java/commons-codec-1.7:0
 	>=dev-java/commons-lang-2.0:0
 	>=dev-java/commons-logging-1.2:0
-	>=dev-java/guava-07:0"
+	>=dev-java/guava-10.0.1:10"
 
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7"
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guice-4,protobuf-java,netty,avro,hadoop-annotations,hadoop-mapreduce-client-core,hadoop-yarn-client,hadoop-yarn-common,hadoop-yarn-server-common,slf4j-api,slf4j-api"
-JAVA_CLASSPATH_EXTRA="guava,commons-cli-1,commons-codec,commons-lang,commons-logging,hadoop-common"
+JAVA_GENTOO_CLASSPATH="guice-4,protobuf-java,netty,avro,hadoop-annotations,hadoop-mapreduce-client-core,hadoop-yarn-client,hadoop-yarn-common,hadoop-yarn-server-common,slf4j-log4j12,slf4j-log4j12"
+JAVA_CLASSPATH_EXTRA="guava-10,commons-cli-1,commons-codec,commons-lang,commons-logging,hadoop-common"

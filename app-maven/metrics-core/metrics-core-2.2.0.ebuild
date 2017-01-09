@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,10 +22,10 @@ MAVEN_ID="com.yammer.metrics:metrics-core:2.2.0"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/metrics-core-2.2.0.pom
-# org.slf4j:slf4j-api:1.7.2 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-api:1.7.2 -> >=dev-java/slf4j-log4j12-1.7.7:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/metrics-core-2.2.0.pom
 CDEPEND="
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -36,4 +36,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="slf4j-api"
+JAVA_GENTOO_CLASSPATH="slf4j-log4j12"

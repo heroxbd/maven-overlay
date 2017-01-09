@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -38,11 +38,11 @@ CDEPEND="
 	>=app-maven/unused-1.0.0:0"
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-network-common_2.11-2.0.0.pom
-# org.slf4j:slf4j-api:1.7.16 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-api:1.7.16 -> >=dev-java/slf4j-log4j12-1.7.7:0
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
 	app-arch/unzip
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7"
@@ -50,4 +50,4 @@ RDEPEND="${CDEPEND}
 S="${WORKDIR}"
 
 JAVA_GENTOO_CLASSPATH="jsr305-bin,netty-all,spark-tags-2.11,unused"
-JAVA_CLASSPATH_EXTRA="slf4j-api"
+JAVA_CLASSPATH_EXTRA="slf4j-log4j12"

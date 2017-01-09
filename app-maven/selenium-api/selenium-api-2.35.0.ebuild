@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,12 +22,12 @@ MAVEN_ID="org.seleniumhq.selenium:selenium-api:2.35.0"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-api-2.35.0.pom
-# com.google.guava:guava:14.0 -> >=dev-java/guava-07:0
-# org.json:json:20080701 -> >=dev-java/json-20150729:0
+# com.google.guava:guava:14.0 -> >=dev-java/guava-10.0.1:10
+# org.json:json:20080701 -> >=dev-java/json-20160212:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/selenium-api-2.35.0.pom
 CDEPEND="
-	>=dev-java/guava-07:0
-	>=dev-java/json-20150729:0"
+	>=dev-java/guava-10.0.1:10
+	>=dev-java/json-20160212:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -38,4 +38,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guava,json"
+JAVA_GENTOO_CLASSPATH="guava-10,json"

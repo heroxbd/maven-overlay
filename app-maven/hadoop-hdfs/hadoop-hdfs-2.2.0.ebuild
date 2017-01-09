@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,7 +22,7 @@ MAVEN_ID="org.apache.hadoop:hadoop-hdfs:2.2.0"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-hdfs-2.2.0.pom
-# com.google.guava:guava:11.0.2 -> >=dev-java/guava-07:0
+# com.google.guava:guava:11.0.2 -> >=dev-java/guava-10.0.1:10
 # com.google.protobuf:protobuf-java:2.5.0 -> >=app-maven/protobuf-java-2.5.0:0
 # com.sun.jersey:jersey-core:1.9 -> >=app-maven/jersey-core-1.9:0
 # com.sun.jersey:jersey-server:1.9 -> >=app-maven/jersey-server-1.9:0
@@ -60,26 +60,26 @@ CDEPEND="
 	>=dev-java/commons-io-2.4:1
 	>=dev-java/commons-lang-2.0:0
 	>=dev-java/commons-logging-1.2:0
-	>=dev-java/guava-07:0
+	>=dev-java/guava-10.0.1:10
 	>=dev-java/log4j-1.2.17:0"
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-hdfs-2.2.0.pom
 # org.apache.hadoop:hadoop-annotations:2.2.0 -> >=app-maven/hadoop-annotations-2.2.0:0
 # org.apache.hadoop:hadoop-auth:2.2.0 -> >=app-maven/hadoop-auth-2.2.0:0
 # org.apache.hadoop:hadoop-common:2.2.0 -> >=app-maven/hadoop-common-2.2.0:0
-# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
 	app-arch/unzip
 	>=app-maven/hadoop-annotations-2.2.0:0
 	>=app-maven/hadoop-auth-2.2.0:0
 	>=app-maven/hadoop-common-2.2.0:0
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7"
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guava,protobuf-java,jersey-core,jersey-server,commons-cli-1,commons-codec,commons-daemon,commons-io-1,commons-lang,commons-logging,servlet-api,jsp-api,log4j,jackson-core-asl,jackson-mapper-asl,jetty,jetty-util,jasper-runtime-bin,xmlenc-bin"
-JAVA_CLASSPATH_EXTRA="hadoop-annotations,hadoop-auth,hadoop-common,slf4j-api"
+JAVA_GENTOO_CLASSPATH="guava-10,protobuf-java,jersey-core,jersey-server,commons-cli-1,commons-codec,commons-daemon,commons-io-1,commons-lang,commons-logging,servlet-api,jsp-api,log4j,jackson-core-asl,jackson-mapper-asl,jetty,jetty-util,jasper-runtime-bin,xmlenc-bin"
+JAVA_CLASSPATH_EXTRA="hadoop-annotations,hadoop-auth,hadoop-common,slf4j-log4j12"

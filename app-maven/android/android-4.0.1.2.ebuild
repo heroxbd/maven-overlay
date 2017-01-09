@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -24,17 +24,17 @@ MAVEN_ID="com.google.android:android:4.0.1.2"
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/android-4.0.1.2.pom
 # commons-logging:commons-logging:1.1.1 -> >=dev-java/commons-logging-1.2:0
 # org.apache.httpcomponents:httpclient:4.0.1 -> >=dev-java/httpcomponents-client-4.5:4.5
-# org.json:json:20080701 -> >=dev-java/json-20150729:0
+# org.json:json:20080701 -> >=dev-java/json-20160212:0
 # org.khronos:opengl-api:2.1.1 -> >=app-maven/opengl-api-2.1.1:0
 # xerces:xmlParserAPIs:2.6.2 -> >=dev-java/xerces-2.11.0:2
-# xpp3:xpp3:1.1.4c -> >=app-maven/xpp3-1.1.4c:0
+# xpp3:xpp3:1.1.4c -> >=app-maven/xpp3-1.1.4:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/android-4.0.1.2.pom
 CDEPEND="
 	>=app-maven/opengl-api-2.1.1:0
-	>=app-maven/xpp3-1.1.4c:0
+	>=app-maven/xpp3-1.1.4:0
 	>=dev-java/commons-logging-1.2:0
 	>=dev-java/httpcomponents-client-4.5:4.5
-	>=dev-java/json-20150729:0
+	>=dev-java/json-20160212:0
 	>=dev-java/xerces-2.11.0:2"
 
 DEPEND="${CDEPEND}

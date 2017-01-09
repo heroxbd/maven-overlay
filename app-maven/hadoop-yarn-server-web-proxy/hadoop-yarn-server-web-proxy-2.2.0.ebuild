@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,8 +22,8 @@ MAVEN_ID="org.apache.hadoop:hadoop-yarn-server-web-proxy:2.2.0"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-yarn-server-web-proxy-2.2.0.pom
-# com.google.inject:guice:3.0 -> >=dev-java/guice-4.0:4
-# com.google.inject.extensions:guice-servlet:3.0 -> >=dev-java/guice-4.0:4
+# com.google.inject:guice:3.0 -> >=dev-java/guice-4.1:4
+# com.google.inject.extensions:guice-servlet:3.0 -> >=dev-java/guice-4.1:4
 # com.google.protobuf:protobuf-java:2.5.0 -> >=app-maven/protobuf-java-2.5.0:0
 # com.sun.jersey:jersey-json:1.9 -> >=app-maven/jersey-json-1.9:0
 # com.sun.jersey:jersey-server:1.9 -> >=app-maven/jersey-server-1.9:0
@@ -35,8 +35,8 @@ MAVEN_ID="org.apache.hadoop:hadoop-yarn-server-web-proxy:2.2.0"
 # org.apache.hadoop:hadoop-annotations:2.2.0 -> >=app-maven/hadoop-annotations-2.2.0:0
 # org.apache.hadoop:hadoop-yarn-common:2.2.0 -> >=app-maven/hadoop-yarn-common-2.2.0:0
 # org.apache.hadoop:hadoop-yarn-server-common:2.2.0 -> >=app-maven/hadoop-yarn-server-common-2.2.0:0
-# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
-# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
+# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-yarn-server-web-proxy-2.2.0.pom
 CDEPEND="
 	>=app-maven/hadoop-annotations-2.2.0:0
@@ -50,8 +50,8 @@ CDEPEND="
 	>=app-maven/protobuf-java-2.5.0:0
 	>=app-maven/servlet-api-2.5:0
 	>=dev-java/commons-io-2.4:1
-	>=dev-java/guice-4.0:4
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/guice-4.1:4
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-yarn-server-web-proxy-2.2.0.pom
 # org.apache.hadoop:hadoop-common:2.2.0 -> >=app-maven/hadoop-common-2.2.0:0
@@ -65,5 +65,5 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guice-4,guice-4,protobuf-java,jersey-json,jersey-server,jersey-guice,jersey-test-framework-grizzly2,commons-io-1,netty,servlet-api,hadoop-annotations,hadoop-yarn-common,hadoop-yarn-server-common,slf4j-api,slf4j-api"
+JAVA_GENTOO_CLASSPATH="guice-4,guice-4,protobuf-java,jersey-json,jersey-server,jersey-guice,jersey-test-framework-grizzly2,commons-io-1,netty,servlet-api,hadoop-annotations,hadoop-yarn-common,hadoop-yarn-server-common,slf4j-log4j12,slf4j-log4j12"
 JAVA_CLASSPATH_EXTRA="hadoop-common"

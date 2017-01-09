@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,7 +22,7 @@ MAVEN_ID="org.apache.hadoop:hadoop-common:2.2.0"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-common-2.2.0.pom
-# com.google.guava:guava:11.0.2 -> >=dev-java/guava-07:0
+# com.google.guava:guava:11.0.2 -> >=dev-java/guava-10.0.1:10
 # com.google.protobuf:protobuf-java:2.5.0 -> >=app-maven/protobuf-java-2.5.0:0
 # com.jcraft:jsch:0.1.42 -> >=app-maven/jsch-0.1.42:0
 # com.sun.jersey:jersey-core:1.9 -> >=app-maven/jersey-core-1.9:0
@@ -49,7 +49,7 @@ MAVEN_ID="org.apache.hadoop:hadoop-common:2.2.0"
 # org.codehaus.jackson:jackson-mapper-asl:1.8.8 -> >=app-maven/jackson-mapper-asl-1.9.13:0
 # org.mortbay.jetty:jetty:6.1.26 -> >=app-maven/jetty-6.1.26:0
 # org.mortbay.jetty:jetty-util:6.1.26 -> >=app-maven/jetty-util-6.1.26:0
-# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
 # xmlenc:xmlenc:0.52 -> >=app-maven/xmlenc-bin-0.52:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-common-2.2.0.pom
 CDEPEND="
@@ -79,9 +79,9 @@ CDEPEND="
 	>=dev-java/commons-lang-2.0:0
 	>=dev-java/commons-logging-1.2:0
 	>=dev-java/commons-net-3.2:0
-	>=dev-java/guava-07:0
+	>=dev-java/guava-10.0.1:10
 	>=dev-java/log4j-1.2.17:0
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-common-2.2.0.pom
 # org.apache.ant:ant:1.8.1 -> >=dev-java/ant-core-1.9.2:0
@@ -93,7 +93,7 @@ DEPEND="${CDEPEND}
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-common-2.2.0.pom
 # commons-el:commons-el:1.0 -> >=dev-java/commons-el-1.0:0
 # javax.servlet.jsp:jsp-api:2.1 -> >=app-maven/jsp-api-2.1:0
-# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
 # tomcat:jasper-compiler:5.5.23 -> >=app-maven/jasper-compiler-bin-5.5.12:0
 # tomcat:jasper-runtime:5.5.23 -> >=app-maven/jasper-runtime-bin-5.5.12:0
 RDEPEND="${CDEPEND}
@@ -102,9 +102,9 @@ RDEPEND="${CDEPEND}
 	>=app-maven/jasper-runtime-bin-5.5.12:0
 	>=app-maven/jsp-api-2.1:0
 	>=dev-java/commons-el-1.0:0
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guava,protobuf-java,jsch,jersey-core,jersey-json,jersey-server,commons-cli-1,commons-codec,commons-configuration,commons-httpclient-3,commons-io-1,commons-lang,commons-logging,commons-net,servlet-api,log4j,jets3t,avro,commons-compress,commons-math,hadoop-annotations,hadoop-auth,zookeeper,jackson-core-asl,jackson-mapper-asl,jetty,jetty-util,slf4j-api,xmlenc-bin,commons-el,jsp-api,slf4j-api,jasper-compiler-bin,jasper-runtime-bin"
+JAVA_GENTOO_CLASSPATH="guava-10,protobuf-java,jsch,jersey-core,jersey-json,jersey-server,commons-cli-1,commons-codec,commons-configuration,commons-httpclient-3,commons-io-1,commons-lang,commons-logging,commons-net,servlet-api,log4j,jets3t,avro,commons-compress,commons-math,hadoop-annotations,hadoop-auth,zookeeper,jackson-core-asl,jackson-mapper-asl,jetty,jetty-util,slf4j-log4j12,xmlenc-bin,commons-el,jsp-api,slf4j-log4j12,jasper-compiler-bin,jasper-runtime-bin"
 JAVA_CLASSPATH_EXTRA="ant-core"

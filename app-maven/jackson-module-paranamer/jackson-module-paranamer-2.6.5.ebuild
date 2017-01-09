@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -23,12 +23,12 @@ MAVEN_ID="com.fasterxml.jackson.module:jackson-module-paranamer:2.6.5"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jackson-module-paranamer-2.6.5.pom
-# com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.5.1:2
+# com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.8.5:2
 # com.thoughtworks.paranamer:paranamer:2.6 -> >=app-maven/paranamer-2.6:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jackson-module-paranamer-2.6.5.pom
 CDEPEND="
 	>=app-maven/paranamer-2.6:0
-	>=dev-java/jackson-databind-2.5.1:2"
+	>=dev-java/jackson-databind-2.8.5:2"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

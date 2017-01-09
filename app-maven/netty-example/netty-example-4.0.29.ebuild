@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -26,22 +26,22 @@ MAVEN_ID="io.netty:netty-example:4.0.29.Final"
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/netty-example-4.0.29.Final.pom
 # com.google.protobuf:protobuf-java:2.5.0 -> >=app-maven/protobuf-java-2.5.0:0
 # com.yammer.metrics:metrics-core:2.2.0 -> >=app-maven/metrics-core-2.2.0:0
-# io.netty:netty-codec-http:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-codec-socks:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-handler:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
+# io.netty:netty-codec-http:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-codec-socks:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-handler:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
 # io.netty:netty-tcnative:1.1.33.Fork3 -> >=dev-java/netty-tcnative-1.1.33.15:0
-# io.netty:netty-transport:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-transport-rxtx:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-transport-sctp:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-transport-udt:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
+# io.netty:netty-transport:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-transport-rxtx:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-transport-sctp:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-transport-udt:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
 # org.eclipse.jetty.npn:npn-api:1.1.1.v20141010 -> >=app-maven/npn-api-1.1.1:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/netty-example-4.0.29.Final.pom
 CDEPEND="
 	>=app-maven/metrics-core-2.2.0:0
 	>=app-maven/npn-api-1.1.1:0
 	>=app-maven/protobuf-java-2.5.0:0
-	>=dev-java/netty-buffer-4.0.36:0
-	>=dev-java/netty-tcnative-1.1.33.15:0"
+	>=dev-java/netty-tcnative-1.1.33.15:0
+	>=dev-java/netty-transport-4.0.36:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -59,4 +59,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="protobuf-java,metrics-core,netty-buffer,netty-buffer,netty-buffer,netty-tcnative,netty-buffer,netty-buffer,netty-buffer,netty-buffer,npn-api,logback,jzlib-1.1,javassist-3"
+JAVA_GENTOO_CLASSPATH="protobuf-java,metrics-core,netty-transport,netty-transport,netty-transport,netty-tcnative,netty-transport,netty-transport,netty-transport,netty-transport,npn-api,logback,jzlib-1.1,javassist-3"

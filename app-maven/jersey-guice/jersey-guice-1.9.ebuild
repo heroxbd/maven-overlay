@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -23,14 +23,14 @@ MAVEN_ID="com.sun.jersey.contribs:jersey-guice:1.9"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-guice-1.9.pom
-# com.google.inject:guice:3.0 -> >=dev-java/guice-4.0:4
-# com.google.inject.extensions:guice-servlet:3.0 -> >=dev-java/guice-4.0:4
+# com.google.inject:guice:3.0 -> >=dev-java/guice-4.1:4
+# com.google.inject.extensions:guice-servlet:3.0 -> >=dev-java/guice-4.1:4
 # com.sun.jersey:jersey-server:1.9 -> >=app-maven/jersey-server-1.9:0
 # javax.inject:javax.inject:1 -> >=dev-java/javax-inject-1:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-guice-1.9.pom
 CDEPEND="
 	>=app-maven/jersey-server-1.9:0
-	>=dev-java/guice-4.0:4
+	>=dev-java/guice-4.1:4
 	>=dev-java/javax-inject-1:0"
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-guice-1.9.pom

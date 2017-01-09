@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -38,13 +38,13 @@ CDEPEND="
 	>=app-maven/unused-1.0.0:0"
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/spark-unsafe_2.11-2.0.0.pom
-# com.google.guava:guava:14.0.1 -> >=dev-java/guava-07:0
-# org.slf4j:slf4j-api:1.7.16 -> >=dev-java/slf4j-api-1.7.7:0
+# com.google.guava:guava:14.0.1 -> >=dev-java/guava-10.0.1:10
+# org.slf4j:slf4j-api:1.7.16 -> >=dev-java/slf4j-log4j12-1.7.7:0
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
 	app-arch/unzip
-	>=dev-java/guava-07:0
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/guava-10.0.1:10
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7"
@@ -52,4 +52,4 @@ RDEPEND="${CDEPEND}
 S="${WORKDIR}"
 
 JAVA_GENTOO_CLASSPATH="jsr305-bin,chill-2.11,spark-tags-2.11,unused"
-JAVA_CLASSPATH_EXTRA="guava,slf4j-api"
+JAVA_CLASSPATH_EXTRA="guava-10,slf4j-log4j12"

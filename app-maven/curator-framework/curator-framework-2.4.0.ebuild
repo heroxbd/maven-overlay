@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,14 +22,14 @@ MAVEN_ID="org.apache.curator:curator-framework:2.4.0"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/curator-framework-2.4.0.pom
-# com.google.guava:guava:14.0.1 -> >=dev-java/guava-07:0
+# com.google.guava:guava:14.0.1 -> >=dev-java/guava-10.0.1:10
 # org.apache.curator:curator-client:2.4.0 -> >=app-maven/curator-client-2.4.0:0
 # org.apache.zookeeper:zookeeper:3.4.5 -> >=app-maven/zookeeper-3.4.5:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/curator-framework-2.4.0.pom
 CDEPEND="
 	>=app-maven/curator-client-2.4.0:0
 	>=app-maven/zookeeper-3.4.5:0
-	>=dev-java/guava-07:0"
+	>=dev-java/guava-10.0.1:10"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -40,4 +40,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="guava,curator-client,zookeeper"
+JAVA_GENTOO_CLASSPATH="guava-10,curator-client,zookeeper"

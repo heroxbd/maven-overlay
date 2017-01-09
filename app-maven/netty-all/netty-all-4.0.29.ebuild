@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -26,22 +26,22 @@ MAVEN_ID="io.netty:netty-all:4.0.29.Final"
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/netty-all-4.0.29.Final.pom
 # com.google.protobuf:protobuf-java:2.5.0 -> >=app-maven/protobuf-java-2.5.0:0
 # commons-logging:commons-logging:1.1.3 -> >=dev-java/commons-logging-1.2:0
-# io.netty:netty-buffer:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-codec:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-codec-haproxy:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-codec-http:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-codec-socks:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-common:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
+# io.netty:netty-buffer:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-codec:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-codec-haproxy:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-codec-http:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-codec-socks:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-common:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
 # io.netty:netty-example:4.0.29.Final -> >=app-maven/netty-example-4.0.29:0
-# io.netty:netty-handler:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-transport:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
+# io.netty:netty-handler:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-transport:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
 # io.netty:netty-transport-native-epoll:4.0.29.Final -> >=app-maven/netty-transport-native-epoll-4.0.29:0
-# io.netty:netty-transport-rxtx:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-transport-sctp:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
-# io.netty:netty-transport-udt:4.0.29.Final -> >=dev-java/netty-buffer-4.0.36:0
+# io.netty:netty-transport-rxtx:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-transport-sctp:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
+# io.netty:netty-transport-udt:4.0.29.Final -> >=dev-java/netty-transport-4.0.36:0
 # log4j:log4j:1.2.17 -> >=dev-java/log4j-1.2.17:0
 # org.jboss.marshalling:jboss-marshalling:1.3.18.GA -> >=app-maven/jboss-marshalling-1.3.14:0
-# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/netty-all-4.0.29.Final.pom
 CDEPEND="
 	>=app-maven/jboss-marshalling-1.3.14:0
@@ -50,8 +50,8 @@ CDEPEND="
 	>=app-maven/protobuf-java-2.5.0:0
 	>=dev-java/commons-logging-1.2:0
 	>=dev-java/log4j-1.2.17:0
-	>=dev-java/netty-buffer-4.0.36:0
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/netty-transport-4.0.36:0
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7
@@ -62,4 +62,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="protobuf-java,commons-logging,netty-buffer,netty-buffer,netty-buffer,netty-buffer,netty-buffer,netty-buffer,netty-example,netty-buffer,netty-buffer,netty-transport-native-epoll,netty-buffer,netty-buffer,netty-buffer,log4j,jboss-marshalling,slf4j-api"
+JAVA_GENTOO_CLASSPATH="protobuf-java,commons-logging,netty-transport,netty-transport,netty-transport,netty-transport,netty-transport,netty-transport,netty-example,netty-transport,netty-transport,netty-transport-native-epoll,netty-transport,netty-transport,netty-transport,log4j,jboss-marshalling,slf4j-log4j12"

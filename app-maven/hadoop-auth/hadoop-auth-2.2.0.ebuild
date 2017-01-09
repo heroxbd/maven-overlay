@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -23,11 +23,11 @@ MAVEN_ID="org.apache.hadoop:hadoop-auth:2.2.0"
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom
 # commons-codec:commons-codec:1.4 -> >=dev-java/commons-codec-1.7:0
-# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-api:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom
 CDEPEND="
 	>=dev-java/commons-codec-1.7:0
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom
 # javax.servlet:servlet-api:2.5 -> >=app-maven/servlet-api-2.5:0
@@ -40,13 +40,13 @@ DEPEND="${CDEPEND}
 # Runtime dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/hadoop-auth-2.2.0.pom
 # log4j:log4j:1.2.17 -> >=dev-java/log4j-1.2.17:0
-# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-api-1.7.7:0
+# org.slf4j:slf4j-log4j12:1.7.5 -> >=dev-java/slf4j-log4j12-1.7.7:0
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7
 	>=dev-java/log4j-1.2.17:0
-	>=dev-java/slf4j-api-1.7.7:0"
+	>=dev-java/slf4j-log4j12-1.7.7:0"
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="commons-codec,slf4j-api,log4j,slf4j-api"
+JAVA_GENTOO_CLASSPATH="commons-codec,slf4j-log4j12,log4j,slf4j-log4j12"
 JAVA_CLASSPATH_EXTRA="servlet-api,hadoop-annotations"

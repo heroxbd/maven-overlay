@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -33,7 +33,7 @@ CDEPEND="
 # Compile dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-server-1.9.pom
 # ant:ant:1.6.5 -> >=dev-java/ant-core-1.9.2:0
-# javax.mail:mail:1.4 -> >=dev-java/oracle-javamail-1.5.6:0
+# javax.mail:mail:1.4 -> >=dev-java/oracle-javamail-1.5.5:0
 # javax.persistence:persistence-api:1.0 -> >=app-maven/persistence-api-1.0:0
 # javax.servlet:javax.servlet-api:3.0.1 -> >=app-maven/javax-servlet-api-3.1.0:0
 # javax.servlet:jsp-api:2.0 -> >=app-maven/jsp-api-bin-2.0:0
@@ -52,7 +52,7 @@ DEPEND="${CDEPEND}
 	>=app-maven/persistence-api-1.0:0
 	>=app-maven/weld-osgi-bundle-1.1.33:0
 	>=dev-java/ant-core-1.9.2:0
-	>=dev-java/oracle-javamail-1.5.6:0"
+	>=dev-java/oracle-javamail-1.5.5:0"
 
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7"

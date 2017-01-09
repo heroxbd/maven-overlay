@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,7 +22,7 @@ MAVEN_ID="org.apache.zookeeper:zookeeper:3.4.5"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/zookeeper-3.4.5.pom
-# commons-collections:commons-collections:3.1 -> >=dev-java/commons-collections-3.2.1:0
+# commons-collections:commons-collections:3.1 -> >=dev-java/commons-collections-4.1:4
 # commons-lang:commons-lang:2.4 -> >=dev-java/commons-lang-2.0:0
 # jdiff:jdiff:1.0.9 -> >=app-maven/jdiff-bin-1.0.9:0
 # jline:jline:0.9.94 -> >=dev-java/jline-2.12.1:2
@@ -39,7 +39,7 @@ CDEPEND="
 	>=app-maven/jdeb-0.8:0
 	>=app-maven/jdiff-bin-1.0.9:0
 	>=app-maven/netty-3.2.2:0
-	>=dev-java/commons-collections-3.2.1:0
+	>=dev-java/commons-collections-4.1:4
 	>=dev-java/commons-lang-2.0:0
 	>=dev-java/jline-2.12.1:2
 	>=dev-java/log4j-1.2.17:0
@@ -55,4 +55,4 @@ RDEPEND="${CDEPEND}
 
 S="${WORKDIR}"
 
-JAVA_GENTOO_CLASSPATH="commons-collections,commons-lang,jdiff-bin,jline-2,log4j,apache-rat-tasks,netty,slf4j-nop,slf4j-nop,jdeb,xerces-2"
+JAVA_GENTOO_CLASSPATH="commons-collections-4,commons-lang,jdiff-bin,jline-2,log4j,apache-rat-tasks,netty,slf4j-nop,slf4j-nop,jdeb,xerces-2"

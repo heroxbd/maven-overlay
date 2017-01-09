@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -22,9 +22,9 @@ MAVEN_ID="com.fasterxml.jackson.module:jackson-module-scala_2.11:2.6.5"
 
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jackson-module-scala_2.11-2.6.5.pom
-# com.fasterxml.jackson.core:jackson-annotations:2.6.5 -> >=dev-java/jackson-annotations-2.5.1:2
-# com.fasterxml.jackson.core:jackson-core:2.6.5 -> >=dev-java/jackson-2.5.1:2
-# com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.5.1:2
+# com.fasterxml.jackson.core:jackson-annotations:2.6.5 -> >=dev-java/jackson-annotations-2.8.5:2
+# com.fasterxml.jackson.core:jackson-core:2.6.5 -> >=dev-java/jackson-2.8.5:2
+# com.fasterxml.jackson.core:jackson-databind:2.6.5 -> >=dev-java/jackson-databind-2.8.5:2
 # com.fasterxml.jackson.module:jackson-module-paranamer:2.6.5 -> >=app-maven/jackson-module-paranamer-2.6.5:0
 # org.scala-lang:scala-library:2.11.7 -> >=app-maven/scala-library-2.11.7:0
 # org.scala-lang:scala-reflect:2.11.7 -> >=app-maven/scala-reflect-2.11.7:0
@@ -33,9 +33,9 @@ CDEPEND="
 	>=app-maven/jackson-module-paranamer-2.6.5:0
 	>=app-maven/scala-library-2.11.7:0
 	>=app-maven/scala-reflect-2.11.7:0
-	>=dev-java/jackson-2.5.1:2
-	>=dev-java/jackson-annotations-2.5.1:2
-	>=dev-java/jackson-databind-2.5.1:2"
+	>=dev-java/jackson-2.8.5:2
+	>=dev-java/jackson-annotations-2.8.5:2
+	>=dev-java/jackson-databind-2.8.5:2"
 
 DEPEND="${CDEPEND}
 	>=virtual/jdk-1.7

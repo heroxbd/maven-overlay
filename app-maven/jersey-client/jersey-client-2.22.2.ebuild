@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -23,15 +23,15 @@ MAVEN_ID="org.glassfish.jersey.core:jersey-client:2.22.2"
 # Common dependencies
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-client-2.22.2.pom
 # javax.ws.rs:javax.ws.rs-api:2.0.1 -> >=app-maven/javax-ws-rs-api-2.0.1:0
-# org.glassfish.hk2:hk2-api:2.4.0-b34 -> >=app-maven/hk2-api-2.4.0:0
-# org.glassfish.hk2:hk2-locator:2.4.0-b34 -> >=app-maven/hk2-locator-2.4.0:0
-# org.glassfish.hk2.external:javax.inject:2.4.0-b34 -> >=app-maven/javax-inject-2.4.0:0
+# org.glassfish.hk2:hk2-api:2.4.0-b34 -> >=app-maven/hk2-api-2.4.0_beta34:0
+# org.glassfish.hk2:hk2-locator:2.4.0-b34 -> >=app-maven/hk2-locator-2.4.0_beta34:0
+# org.glassfish.hk2.external:javax.inject:2.4.0-b34 -> >=app-maven/javax-inject-2.4.0_beta34:0
 # org.glassfish.jersey.core:jersey-common:2.22.2 -> >=app-maven/jersey-common-2.22.2:0
 # POM: /fefs/disk/usr100/gentoo/var/lib/java-ebuilder/poms/jersey-client-2.22.2.pom
 CDEPEND="
-	>=app-maven/hk2-api-2.4.0:0
-	>=app-maven/hk2-locator-2.4.0:0
-	>=app-maven/javax-inject-2.4.0:0
+	>=app-maven/hk2-api-2.4.0_beta34:0
+	>=app-maven/hk2-locator-2.4.0_beta34:0
+	>=app-maven/javax-inject-2.4.0_beta34:0
 	>=app-maven/javax-ws-rs-api-2.0.1:0
 	>=app-maven/jersey-common-2.22.2:0"
 
